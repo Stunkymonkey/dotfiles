@@ -1,6 +1,6 @@
 # my personal dotfiles
 
-These are my personal dotfiles. Free for personal use. Thanks to @bebehei
+These are my personal dotfiles. Free for personal use. Thanks to [@bebehei](https://github.com/bebehei)
 
 # My configured software
 
