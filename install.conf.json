@@ -1,0 +1,61 @@
+[
+	{
+		"defaults": {
+			"link": {
+				"relink": true
+			}
+		}
+	},
+	{
+		"clean": ["~"]
+	},
+	{
+		"shell": [
+			["mkdir -p ~/.local/bin", "Creating local bin dir"],
+			["mkdir -p ~/.config/i3", "Creating i3-config dir"],
+			["mkdir -p ~/.config/i3status", "Creating i3-status dir"]
+		]
+	},
+	{
+		"link": {
+			"~/.dotfiles": "",
+			"~/.bashrc": "bash/bashrc",
+			"~/.bash_profile": "bash/bashrc",
+			"~/.liquidprompt": "bash/liquidprompt",
+			"~/.local/bin/host-is-on": "bin/host-is-on.sh",
+			"~/.local/bin/mdo": "bin/mdo.sh",
+			"~/.gitconfig": "git/gitconfig",
+			"~/.local/bin/diff-so-fancy": "git/diff-so-fancy/diff-so-fancy",
+			"~/.local/bin/diff-highlight": "git/diff-so-fancy/third_party/diff-highlight/diff-highlight",
+			"~/.config/i3/config": "i3/i3config",
+			"~/.config/i3status/config": "i3/i3status",
+			"~/.local/bin/checknofullscreen": "i3/checknofullscreen.sh",
+			"~/.local/bin/lockscreen": "i3/lockscreen.sh",
+			"~/.local/bin/locknow": "i3/locknow.sh",
+			"~/.profile.d/load": "shell/load",
+			"~/.profile.d/10-vars.sh": "shell/vars.sh",
+			"~/.profile.d/10-paths.sh": "shell/paths.sh",
+			"~/.profile.d/10-gitrepo-commited.sh": "shell/gitrepo-commited.sh",
+			"~/.profile.d/10-liquidprompt.sh": "shell/liquidprompt.sh",
+			"~/.profile.d/20-aliases.sh": "shell/aliases.sh",
+			"~/.profile.d/20-cd.sh": "shell/cd.sh",
+			"~/.profile.d/40-extract.sh": "shell/extract.sh",
+			"~/.profile.d/40-mysqlpw.sh": "shell/mysqlpw.sh",
+			"~/.profile.d/90-keychain.sh": "shell/keychain.sh",
+			"~/.profile.d/80-command-not-found.sh": "shell/command-not-found.sh",
+			"~/.config/redshift.conf": "redshift/redshift.conf",
+			"~/.config/redshift/hooks/hook.sh": "redshift/hook.sh",
+			"~/.config/pacaur/config": "pacaur/config",
+			"~/.toprc": "top/toprc",
+			"~/.vimrc": "vim/wuman-vimrc/vimrc",
+			"~/.vim/bundle": "vim/wuman-vimrc/bundle",
+			"~/.wgetrc": "wget/wgetrc",
+			"~/.Xresources": "i3/Xresources"
+		}
+	},
+	{
+		"shell": [
+			["git submodule update --init --recursive", "Installing submodules"]
+		]
+	}
+]

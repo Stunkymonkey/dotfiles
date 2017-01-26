@@ -1,0 +1,45 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[user]
+	name = Felix Buehler
+	email = felix@buehler.rocks
+[merge]
+	defaultToUpstream = true
+	tool = vimdiff
+	template = ~/.git/review-template
+[core]
+	editor = vim
+	eol = native
+	pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
+[alias]
+	ct         = log --graph --decorate --pretty=oneline --abbrev-commit
+	committree = log --graph --decorate --pretty=oneline --abbrev-commit
+	d = difftool
+[rerere]
+	enabled = true
+[branch]
+	autoSetupMerge = always
+[remote "origin"]
+	fetch = +refs/pull/*/head:refs/remotes/origin/pull/*
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "upstream"]
+	fetch = +refs/pull/*/head:refs/remotes/upstream/pull/*
+	fetch = +refs/heads/*:refs/remotes/upstream/*
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+[credential]
+	helper = /usr/lib/git-core/git-credential-gnome-keyring

@@ -1,0 +1,13 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "vim/wuman-vimrc"]
+	path = vim/wuman-vimrc
+	url = https://github.com/wuman/vimrc
+	ignore = dirty
+[submodule "git/diff-so-fancy"]
+	path = git/diff-so-fancy
+	url = https://github.com/so-fancy/diff-so-fancy
+[submodule "bash/liquidprompt"]
+	path = bash/liquidprompt
+	url = https://github.com/nojhan/liquidprompt

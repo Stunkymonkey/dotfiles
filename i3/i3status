@@ -1,0 +1,77 @@
+general {
+	output_format = "i3bar"
+	colors = true
+	interval = 2
+	color_good = "#60FF60"
+	color_degraded = "#FFFF60"
+	color_bad = "#FF6060"
+}
+
+order += "disk /"
+order += "disk /home"
+order += "ipv6"
+order += "wireless wlp3s0"
+order += "ethernet enp0s25"
+order += "cpu_usage"
+order += "volume master"
+order += "battery 0"
+order += "time"
+
+
+time {
+	format = "%a %d.%m.%Y %H:%M:%S"
+}
+
+disk "/" {
+	format = " %avail"
+	low_threshold = 10
+	threshold_type = percentage_free
+}
+
+disk "/home" {
+	format = " %avail"
+        low_threshold = 10
+        threshold_type = percentage_free
+}
+
+volume master {
+	format = " %volume"
+	format_muted = ""
+	device = "default"
+	mixer = "Master"
+}
+
+ipv6 {
+	format_up = "v6"
+	#format_up = "%ip"
+	format_down = "v6"
+}
+
+wireless wlp3s0 {
+	format_up = "( %quality  %essid  %bitrate) %ip"
+	format_down = ""
+}
+
+ethernet enp0s25 {
+	format_up = "( %speed) %ip"
+	format_down = ""
+}
+
+battery 0 {
+	format = "%status %percentage %remaining %emptytime"
+	format_down = "No battery"
+	status_chr = ""
+	status_bat = ""
+	status_full = ""
+	hide_seconds = true
+	integer_battery_capacity = true
+	last_full_capacity = true
+	path = "/sys/class/power_supply/BAT%d/uevent"
+	low_threshold = 10
+	threshold_type = percentage
+}
+
+cpu_usage {
+	format = " %usage"
+}
+
