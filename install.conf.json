@@ -13,7 +13,8 @@
 		"shell": [
 			["mkdir -p ~/.local/bin", "Creating local bin dir"],
 			["mkdir -p ~/.config/i3", "Creating i3-config dir"],
-			["mkdir -p ~/.config/i3status", "Creating i3-status dir"]
+			["mkdir -p ~/.config/i3status", "Creating i3-status dir"],
+			["mkdir -p ~/.config/dunst", "Creating dunst dir"]
 		]
 	},
 	{
@@ -33,6 +34,7 @@
 			"~/.local/bin/checknofullscreen": "i3/checknofullscreen.sh",
 			"~/.local/bin/lockscreen": "i3/lockscreen.sh",
 			"~/.local/bin/locknow": "i3/locknow.sh",
+			"~/.config/dunst/dunstrc": "dunst/dunstrc",
 			"~/.profile.d/load": "shell/load",
 			"~/.profile.d/10-vars.sh": "shell/vars.sh",
 			"~/.profile.d/10-paths.sh": "shell/paths.sh",
