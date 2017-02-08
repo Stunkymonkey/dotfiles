@@ -61,7 +61,7 @@ alias mon-update="xrandr --auto"
 alias pwedit="svim -p /etc/{passwd,group,shadow,gshadow}"
 alias cmdlist='find $(echo $PATH | tr ":" "\n")'
 alias makepasswd='makepasswd --minchars=10 --maxchars=25 --count=10'
-alias shuttle='sshuttle --dns -v -r uberspace 0/0'
+alias shuttle='sshuttle --dns -r uberspace 0/0'
 
 alias backupnow='sudo borgmatic -v 1 && echo $(date +"%Y%m%d") > ~/.borgbackup.log'
 alias syncbackupto='sudo rsync -aPzchv backup:/home/felix/data/ '
