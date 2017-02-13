@@ -42,7 +42,7 @@ alias of="xdg-open"
 
 if [ ! -z "$(type sudo 2>/dev/null)" -a "$USER" != 'root' ]; then
 	#create sudo aliases WITHOUT leading s
-	for sudo in wifi-menu netctl mount umount pacman shutdown reboot iftop fsadm lvchange lvconvert lvcreate lvdisplay lvextend lvm lvmchange lvmconf lvmconfig lvmdiskscan lvmdump lvmetad lvmsadc lvmsar lvreduce lvremove lvrename lvresize lvs lvscan pvchange pvck pvcreate pvdisplay pvmove pvremove pvresize pvs pvscan vgcfgbackup vgcfgrestore vgchange vgck vgconvert vgcreate vgdisplay vgexport vgextend vgimport vgimportclone vgmerge vgmknodes vgreduce vgremove vgrename vgs vgscan vgsplit;
+	for sudo in wifi-menu netctl mount umount shutdown reboot iftop fsadm lvchange lvconvert lvcreate lvdisplay lvextend lvm lvmchange lvmconf lvmconfig lvmdiskscan lvmdump lvmetad lvmsadc lvmsar lvreduce lvremove lvrename lvresize lvs lvscan pvchange pvck pvcreate pvdisplay pvmove pvremove pvresize pvs pvscan vgcfgbackup vgcfgrestore vgchange vgck vgconvert vgcreate vgdisplay vgexport vgextend vgimport vgimportclone vgmerge vgmknodes vgreduce vgremove vgrename vgs vgscan vgsplit;
 	do
 		type $sudo > /dev/null 2>&1 && alias $sudo="sudo $sudo";
 	done
@@ -54,6 +54,14 @@ if [ ! -z "$(type sudo 2>/dev/null)" -a "$USER" != 'root' ]; then
 		type $sudo > /dev/null 2>&1  && alias s$sudo="sudo $sudo";
 	done
 	unset sudo
+
+	pacman(){
+		# Check if pacman has -R or -S option
+		# which should indicate in most times if we need sudo
+		echo "$*" | grep -- "-[SR]" >/dev/null 2>&1 \
+			&& sudo /usr/bin/pacman $* \
+			||      /usr/bin/pacman $*
+	}
 fi
 
 alias mon-update="xrandr --auto"
