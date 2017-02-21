@@ -22,6 +22,8 @@ exec --no-startup-id firefox
 font pango:Fira Sans Mono 12
 
 ##Various
+assign [class="Feedreader"] 8
+for_window [class="Feedreader"] move workspace 8
 assign [class="Evolution"] 9
 for_window [class="Evolution"] move workspace 9
 assign [class="Rhythmbox"] 10
