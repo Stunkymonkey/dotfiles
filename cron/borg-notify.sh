@@ -1,5 +1,5 @@
 #!/bin/bash
-## */10 * * * * cd ~/.dotfiles/cron/ && bash borg-notify.sh
+## */10 * * * * ~/.dotfiles/cron/borg-notify.sh
 
 LAST=$(tail -1 ~/.borgbackup.log)
 
