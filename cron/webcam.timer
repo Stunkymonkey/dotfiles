@@ -1,0 +1,9 @@
+[Unit]
+Description=1hour webcam-timer
+
+[Timer]
+OnCalendar=*:0
+Unit=webcam.target
+
+[Install]
+WantedBy=webcam.target

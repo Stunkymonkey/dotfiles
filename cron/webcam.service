@@ -1,0 +1,6 @@
+[Unit]
+Description=Webcam script
+
+[Service]
+ExecStart=/home/felix/.dotfiles/cron/webcam.sh
+Type=oneshot
