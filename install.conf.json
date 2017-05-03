@@ -32,6 +32,7 @@
 			"~/.config/i3/config": "i3/i3config",
 			"~/.config/i3status/config": "i3/i3status",
 			"~/.local/bin/checknofullscreen": "i3/checknofullscreen.sh",
+			"~/.local/bin/clean": "bin/clean.sh",
 			"~/.local/bin/lockscreen": "i3/lockscreen.sh",
 			"~/.local/bin/locknow": "i3/locknow.sh",
 			"~/.config/dunst/dunstrc": "dunst/dunstrc",
