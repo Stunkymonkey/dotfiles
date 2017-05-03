@@ -51,6 +51,7 @@
 			"~/.config/redshift/hooks/hook.sh": "redshift/hook.sh",
 			"~/.config/pacaur/config": "pacaur/config",
 			"~/.toprc": "top/toprc",
+			"~/.config/htop/htoprc": "top/htoprc",
 			"~/.vimrc": "vim/wuman-vimrc/vimrc",
 			"~/.vim/bundle": "vim/wuman-vimrc/bundle",
 			"~/.wgetrc": "wget/wgetrc",
