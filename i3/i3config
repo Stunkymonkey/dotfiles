@@ -45,6 +45,7 @@ bindsym $mod+Shift+F1 exec curl http://esp8266/socket0Off || curl http://home.st
 
 # Screenshot
 bindsym Print exec "scrot ~/Downloads/Screenshot%Y-%m-%d-%H:%M:%S.png -z"
+bindsym Scroll_Lock exec ~/.local/bin/lockscreen -fl
 
 # forward an backward at arrow-keys
 bindsym --release XF86Back exec --no-startup-id xdotool key --clearmodifiers Ctrl+Page_Up
@@ -143,6 +144,7 @@ bindsym $mod+c layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 #bindsym $mod+space focus mode_toggle
+bindsym $mod+space exec setxkbmap de -option ctrl:nocaps
 # focus the child container
 bindsym $mod+s focus child
 # focus the parent container
