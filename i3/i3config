@@ -39,6 +39,9 @@ bindsym $mod+m exec keepassx2
 bindsym $mod+e exec subl3
 bindsym $mod+w exec firefox
 
+# to prevent gnome-help
+bindsym F1 exec :
+
 # ESP8266
 bindsym $mod+F1 exec curl http://esp8266/socket0Toggle || curl http://home.stunkymonkey.de:61611/socket0Toggle
 bindsym $mod+Shift+F1 exec curl http://esp8266/socket0Off || curl http://home.stunkymonkey.de:61611/socket0Off
