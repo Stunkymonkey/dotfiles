@@ -26,6 +26,8 @@ assign [class="Feedreader"] 8
 for_window [class="Feedreader"] move workspace 8
 assign [class="Evolution"] 9
 for_window [class="Evolution"] move workspace 9
+assign [class="Thunderbird"] 9
+for_window [class="Thunderbird"] move workspace 9
 assign [class="Rhythmbox"] 10
 for_window [class="Rhythmbox"] move workspace 10
 hide_edge_borders both
