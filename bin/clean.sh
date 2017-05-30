@@ -6,8 +6,8 @@ case "$1" in
 		$0 pacman
 		;;
 	docker)
-		docker container ls --filter status=exited --format '{{.ID}}' | xargs -r docker container rm
-		docker image     ls --filter dangling=true --format='{{.ID}}' | xargs -r docker image rm 
+		docker container prune --force
+		docker image prune --force
 		;;
 	pacman)
 		pacman -Scc
