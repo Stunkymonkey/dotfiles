@@ -1,10 +1,14 @@
 set $mod Mod4
 floating_modifier $mod
-exec setxkbmap de -option ctrl:nocaps
-exec --no-startup-id xsetroot -solid "#2F343F"
 
-# startup programs:
+# keyboard layout
+exec setxkbmap de -option ctrl:nocaps
+
+# background
+exec --no-startup-id xsetroot -solid "#2F343F"
 #exec --no-startup-id hsetroot -center ~/.wallpaper
+
+# startup programs
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nm-applet
 exec --no-startup-id gnome-keyring-daemon
@@ -19,6 +23,7 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id rhythmbox
 exec --no-startup-id firefox
 
+# font
 font pango:Fira Sans Mono 12
 
 # make some windows floating
@@ -49,8 +54,8 @@ bindsym $mod+w exec firefox
 bindsym F1 exec :
 
 # ESP8266
-bindsym $mod+F1 exec curl http://esp8266/socket0Toggle || curl http://home.stunkymonkey.de:61611/socket0Toggle
-bindsym $mod+Shift+F1 exec curl http://esp8266/socket0Off || curl http://home.stunkymonkey.de:61611/socket0Off
+bindsym $mod+F1 exec curl http://esp8266/socket0Toggle
+bindsym $mod+Shift+F1 exec curl http://esp8266/socket0Off
 
 # Screenshot
 bindsym Print exec "scrot ~/Downloads/Screenshot%Y-%m-%d-%H:%M:%S.png -z"
@@ -60,39 +65,6 @@ bindsym Scroll_Lock exec ~/.local/bin/lockscreen -fl
 bindsym --release XF86Back exec --no-startup-id xdotool key --clearmodifiers Ctrl+Page_Up
 bindsym --release XF86Forward exec --no-startup-id xdotool key --clearmodifiers Ctrl+Page_Down
 
-set $bg-color               #2F343F
-set $inactive-bg-color      #2F343F
-set $text-color             #F3F4F5
-set $inactive-text-color    #676E7D
-set $urgent-bg-color        #E53935
-set $indicator-color        #00FF00
-
-set $workspace-color        #5294E2
-set $inactive-workspace     #2F343F
-set $seperator-color        #666666
-set $ws-text-color          #FFFFFF
-set $ws-inactive-text-color #D3DAE3
-
-# window colors
-client.focused          $bg-color           $bg-color          $text-color          $indicator-color
-client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator-color
-client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator-color
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator-color
-
-bar {
-    status_command i3status
-    position top
-    workspace_buttons   yes
-    colors {
-        background          $bg-color
-        statusline          $ws-inactive-text-color
-        separator           $seperator-color
-        focused_workspace   $workspace-color    $workspace-color    $ws-text-color
-        active_workspace    $inactive-workspace $inactive-workspace $ws-inactive-text-color
-        inactive_workspace  $inactive-workspace $inactive-workspace $ws-inactive-text-color
-        urgent_workspace    $urgent-bg-color    $urgent-bg-color    $ws-text-color
-    }
-}
 
 # Sreen brightness controls
 #increase screen brightness
@@ -117,7 +89,7 @@ bindsym XF86AudioPrev exec dbus-send --type=method_call --dest=org.mpris.MediaPl
 # Microphone
 bindsym XF86AudioMicMute exec pulseaudio-ctl mute-input #toggle
 
-##firefox bughelper
+#firefox bughelper
 bindsym $mod+^ floating toggle; floating toggle;
 
 # main commands
@@ -240,3 +212,38 @@ mode "resize" {
 	bindsym $mod+r mode "default"
 }
 bindsym $mod+r mode "resize"
+
+# colors
+set $bg-color               #2F343F
+set $inactive-bg-color      #2F343F
+set $text-color             #F3F4F5
+set $inactive-text-color    #676E7D
+set $urgent-bg-color        #E53935
+set $indicator-color        #00FF00
+
+set $workspace-color        #5294E2
+set $inactive-workspace     #2F343F
+set $seperator-color        #666666
+set $ws-text-color          #FFFFFF
+set $ws-inactive-text-color #D3DAE3
+
+# window colors
+client.focused          $bg-color           $bg-color          $text-color          $indicator-color
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator-color
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator-color
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator-color
+
+bar {
+    status_command i3status
+    position top
+    workspace_buttons   yes
+    colors {
+        background          $bg-color
+        statusline          $ws-inactive-text-color
+        separator           $seperator-color
+        focused_workspace   $workspace-color    $workspace-color    $ws-text-color
+        active_workspace    $inactive-workspace $inactive-workspace $ws-inactive-text-color
+        inactive_workspace  $inactive-workspace $inactive-workspace $ws-inactive-text-color
+        urgent_workspace    $urgent-bg-color    $urgent-bg-color    $ws-text-color
+    }
+}
