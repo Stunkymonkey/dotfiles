@@ -11,10 +11,13 @@
 	},
 	{
 		"shell": [
+			["mkdir -p ~/.profile.d/", "Creating local profile dir"],
 			["mkdir -p ~/.local/bin", "Creating local bin dir"],
 			["mkdir -p ~/.config/i3", "Creating i3-config dir"],
 			["mkdir -p ~/.config/i3status", "Creating i3-status dir"],
-			["mkdir -p ~/.config/dunst", "Creating dunst dir"]
+			["mkdir -p ~/.config/dunst", "Creating dunst dir"],
+			["mkdir -p ~/.config/pacaur", "Creating pacaur dir"],
+			["mkdir -p ~/.config/redshift/hooks", "Creating redshift dir"]
 		]
 	},
 	{
