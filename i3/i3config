@@ -49,6 +49,7 @@ bindsym Shift+$mod+Tab workspace prev
 bindsym $mod+m exec keepassx2
 bindsym $mod+e exec subl3
 bindsym $mod+w exec firefox
+bindsym $mod+u exec feedreader
 
 # to prevent gnome-help
 bindsym F1 exec :
