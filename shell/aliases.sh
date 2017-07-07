@@ -99,6 +99,9 @@ alias pacman-update='sudo pacman -Syu'
 alias pacaur-update='pacaur -Syua'
 alias pacman-clean='sudo pacman -Sc'
 
+# DOTFILES:
+alias dotfile-update-submodules='cd ~/.dotfiles/ && git submodule foreach git pull origin master'
+
 # TEE:
 alias ttime_green="sh -c \"sleep 180 && notify-send -u critical 'The tea is ready'\" &"
 alias ttime_black="sh -c \"sleep 300 && notify-send -u critical 'The tea is ready'\" &"
