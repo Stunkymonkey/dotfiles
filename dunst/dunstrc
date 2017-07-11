@@ -255,3 +255,8 @@
 #	urgency = normal
 #
 # vim: ft=cfg
+
+[locking]
+    appname = "lockscreen"
+    new_icon = "system-lock-screen"
+    history_ignore = yes
