@@ -108,6 +108,14 @@ alias dotfile-update-submodules='cd ~/.dotfiles/ && git submodule foreach git pu
 alias ttime_green="sh -c \"sleep 180 && notify-send -u critical 'The tea is ready'\" &"
 alias ttime_black="sh -c \"sleep 300 && notify-send -u critical 'The tea is ready'\" &"
 
+# set DPMS values in minutes
+dpms(){
+	[ -z "${1}" ] && echo "No time given!" && return 1
+	local secs=`expr "60*${1}"`
+	xset s off
+	xset dpms "${secs}" "${secs}" "${secs}"
+}
+
 # scan your local network with nmap
 #
 # usage:
