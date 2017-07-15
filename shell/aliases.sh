@@ -111,7 +111,7 @@ alias ttime_black="sh -c \"sleep 300 && notify-send -u critical 'The tea is read
 # set DPMS values in minutes
 dpms(){
 	[ -z "${1}" ] && echo "No time given!" && return 1
-	local secs=`expr "60*${1}"`
+	local secs=`expr "60" "*" "${1}"`
 	xset s off
 	xset dpms "${secs}" "${secs}" "${secs}"
 }
