@@ -84,7 +84,7 @@ alias cmdlist='find $(echo $PATH | tr ":" "\n")'
 alias makepasswd='makepasswd --minchars=10 --maxchars=25 --count=10'
 alias shuttle='sshuttle --dns -r uberspace 0/0'
 
-alias backupnow='sudo borgmatic -v 1 && echo $(date +"%Y%m%d") > ~/.borgbackup.log'
+alias backup='sudo borgmatic -v 1 && echo $(date +"%Y%m%d") > ~/.borgbackup.log'
 
 alias vnc-temp='x11vnc -display :0 -nap -wait 50 -noxdamage -forever -rfbauth ~/.vnc/passwd'
 
