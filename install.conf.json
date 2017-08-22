@@ -29,7 +29,6 @@
 			"~/.local/bin/host-is-on": "bin/host-is-on.sh",
 			"~/.local/bin/mdo": "bin/mdo.sh",
 			"~/.local/bin/mon-toggle": "bin/mon-toggle.sh",
-			"~/.local/bin/screen-blank": "bin/screen-blank.sh",
 			"~/.gitconfig": "git/gitconfig",
 			"~/.local/bin/diff-so-fancy": "git/diff-so-fancy/diff-so-fancy",
 			"~/.local/bin/diff-highlight": "git/diff-so-fancy/third_party/diff-highlight/diff-highlight",
