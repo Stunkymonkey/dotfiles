@@ -45,7 +45,7 @@ notification(){
 	  -a lockscreen \
 	  -c lock-warn \
 	  -u critical \
-	  -t 5000 \
+	  -t 1000 \
 	  -i screensaver \
 	  "Locking Screen" \
 	  "Will Lock Screen in 15s"
