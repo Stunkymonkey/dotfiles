@@ -79,8 +79,8 @@ fi
 
 alias mon-update="xrandr --auto"
 
-alias pwedit="svim -p /etc/{passwd,group,shadow,gshadow}"
-alias cmdlist='find $(echo $PATH | tr ":" "\n")'
+alias pwedit="sudo vim -p /etc/{passwd,group,shadow,gshadow}"
+alias cmdlist='find $(echo $PATH | tr ":" "\n") | awk -F / "{print \$NF}" | sort -u'
 alias makepasswd='makepasswd --minchars=10 --maxchars=25 --count=10'
 alias shuttle='sshuttle --dns -r uberspace 0/0'
 
