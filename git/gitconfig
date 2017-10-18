@@ -18,6 +18,7 @@
 	ct         = log --graph --decorate --pretty=oneline --abbrev-commit
 	committree = log --graph --decorate --pretty=oneline --abbrev-commit
 	d = difftool
+	git = !exec git
 [rerere]
 	enabled = true
 [branch]
