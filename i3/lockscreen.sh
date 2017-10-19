@@ -98,5 +98,3 @@ while getopts ":hdfln" opt; do
 			;;
 	esac
 done
-
-exit 0
