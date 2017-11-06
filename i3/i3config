@@ -27,6 +27,7 @@ font pango:Fira Sans Mono 12
 
 # make some windows floating
 for_window [class="Firefox" window_role="About"] floating enable
+for_window [class="Nightly" window_role="About"] floating enable
 for_window [title="^pdfpc - present"] move to output right, fullscreen
 
 # Stick windows to workspaces
