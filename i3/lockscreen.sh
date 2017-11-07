@@ -5,6 +5,12 @@
 LOCK_TIME=${LOCK_TIME:-3}
 LOCK_NOTIFY_TIME=${LOCK_NOTIFY_TIME:-15}
 
+if [ -n "${WAYLAND_DISPLAY}" ]; then
+	LOCK_CMD="swaylock"
+else
+	LOCK_CMD="i3lock"
+fi
+
 PROGNAME=$(basename $0)
 
 OUTPUT_IMAGE="/tmp/i3lock.png"
@@ -36,7 +42,9 @@ checkfull(){
 lock(){
 	scrot -z $OUTPUT_IMAGE
 	convert $OUTPUT_IMAGE -resize 20% -level 0%,100%,0.9 -blur 0x2 -resize 500% $OUTPUT_IMAGE
-	i3lock -i $OUTPUT_IMAGE -t
+	${LOCK_CMD} \
+	  -t \
+	  -i $OUTPUT_IMAGE
 	rm $OUTPUT_IMAGE
 }
 
