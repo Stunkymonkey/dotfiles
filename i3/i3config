@@ -57,6 +57,8 @@ bindsym F1 exec :
 # ESP8266
 bindsym $mod+F1 exec curl http://esp8266/socket0Toggle
 bindsym $mod+Shift+F1 exec curl http://esp8266/socket0Off
+bindsym $mod+F2 exec curl http://esp8266/socket1Toggle
+bindsym $mod+Shift+F2 exec curl http://esp8266/socket1Off
 
 # Screenshot
 bindsym Print exec "scrot ~/Downloads/Screenshot%Y-%m-%d-%H:%M:%S.png -z"
