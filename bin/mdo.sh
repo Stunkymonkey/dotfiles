@@ -6,4 +6,4 @@
 # e.g. preview the markdown in vim:
 # :!mdo %
 
-$BROWSER "data:text/html;base64,`markdown $* | base64 -w 0`"
+$BROWSER "data:text/html;base64,`markdown_py $* | base64 -w 0`"
