@@ -53,6 +53,7 @@
 			"~/.config/redshift.conf": "redshift/redshift.conf",
 			"~/.config/redshift/hooks/hook.sh": "redshift/hook.sh",
 			"~/.config/pacaur/config": "pacaur/config",
+			"~/.tmux.conf": "tmux/tmux.conf",
 			"~/.toprc": "top/toprc",
 			"~/.config/htop/htoprc": "top/htoprc",
 			"~/.vimrc": "vim/wuman-vimrc/vimrc",
