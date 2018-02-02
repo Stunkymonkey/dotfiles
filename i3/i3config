@@ -222,6 +222,11 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+mode "passthrough" {
+    bindsym Mod4+Escape mode "default"
+}
+bindsym Mod4+Escape mode "passthrough"
+
 # colors
 set $bg-color               #2F343F
 set $inactive-bg-color      #2F343F
