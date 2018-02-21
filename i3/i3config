@@ -16,7 +16,7 @@ exec --no-startup-id feedreader --headless
 exec --no-startup-id ~/.local/bin/xmon default
 exec --no-startup-id ~/.local/bin/lockscreen -d
 exec --no-startup-id albert
-exec --no-startup-id owncloud
+exec --no-startup-id nextcloud
 exec --no-startup-id syncthing-gtk
 exec --no-startup-id telegram-desktop -startintray
 exec --no-startup-id redshift-gtk
