@@ -212,6 +212,12 @@
 	foreground = "#E1E5EA"
 	timeout = 0
 
+[fullscreen_delay_everything]
+    fullscreen = delay
+[fullscreen_show_critical]
+    msg_urgency = critical
+    fullscreen = show
+
 [lockscreen]
     appname = "lockscreen"
     new_icon = "system-lock-screen"
