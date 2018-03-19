@@ -114,8 +114,8 @@ bindsym $mod+z exec ~/.local/bin/lockscreen -fl
 bindsym $mod+y exec ~/.local/bin/lockscreen -fl
 
 # start dmenu (a program launcher)
-bindsym $mod+x exec --no-startup-id i3-dmenu-desktop --entry-type=command
-bindsym $mod+d exec --no-startup-id albert && albert show
+bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --entry-type=command
+bindsym $mod+d exec --no-startup-id albert toggle || albert
 
 # kill focused window
 bindsym $mod+Shift+q kill
