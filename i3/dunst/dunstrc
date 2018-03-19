@@ -149,7 +149,7 @@
 	startup_notification = false
 
 	# dmenu path.
-	dmenu = dmenu -i -p dunst:
+	dmenu = /usr/bin/rofi -dmenu
 
 	# Browser for opening urls in context menu.
 	browser = /usr/bin/firefox -new-tab
