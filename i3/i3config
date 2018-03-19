@@ -29,6 +29,7 @@ font pango:Fira Sans Mono 12
 for_window [class="Firefox" window_role="About"] floating enable
 for_window [class="Nightly" window_role="About"] floating enable
 for_window [title="^pdfpc - present"] move to output right, fullscreen
+for_window [class="Pavucontrol"] floating enable
 
 # Stick windows to workspaces
 assign [class="Feedreader"] 8
