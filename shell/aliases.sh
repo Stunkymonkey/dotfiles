@@ -103,6 +103,11 @@ alias pacaur-update='pacaur -Syua'
 # DOTFILES:
 alias dotfile-update-submodules='cd ~/.dotfiles/ && git submodule foreach git pull origin master'
 
+# ESP32:
+alias esp32-flash="esptool --chip esp32 -p /dev/ttyUSB? write_flash -z 0x1000"
+alias esp32-mount="mpy-fuse --port /dev/ttyUSB? --baud 115200"
+alias esp32-terminal="screen /dev/ttyUSB? 115200"
+
 # TEE:
 alias ttime_green="sh -c \"sleep 180 && notify-send -u critical 'The tea is ready'\" &"
 alias ttime_black="sh -c \"sleep 300 && notify-send -u critical 'The tea is ready'\" &"
