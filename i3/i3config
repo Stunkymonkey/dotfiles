@@ -13,7 +13,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nm-applet
 exec --no-startup-id gnome-keyring-daemon --start --components secrets
 exec --no-startup-id feedreader --headless
-exec --no-startup-id ~/.local/bin/xmon default
+exec --no-startup-id ~/.local/bin/mon-toggle
 exec --no-startup-id ~/.local/bin/lockscreen -d
 exec --no-startup-id albert
 exec --no-startup-id nextcloud
