@@ -74,8 +74,8 @@ battery all {
 
 memory {
 	format = " %used"
-	low_threshold = 10
-	threshold_type = percentage_free
+	threshold_degraded = 25%
+	threshold_critical = 10%
 }
 
 load {
