@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # shellcheck source=.lockvars
 # shellcheck disable=SC1091
