@@ -217,7 +217,16 @@
 [fullscreen_show_critical]
     msg_urgency = critical
     fullscreen = show
+[fullscreen_show_pulseaudio]
+    appname = "pulseaudio-ctl"
+    fullscreen = show
 
+[VLC]
+    appname = VLC media player
+    foreground = "#f48b00"
+    new_icon = "vlc"
+    history_ignore = yes
+    set_transient = yes
 [lockscreen]
     appname = "lockscreen"
     new_icon = "system-lock-screen"
