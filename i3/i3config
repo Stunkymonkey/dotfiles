@@ -12,6 +12,7 @@ exec --no-startup-id xsetroot -solid "#2F343F"
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nm-applet
 exec --no-startup-id gnome-keyring-daemon --start --components secrets
+exec --no-startup-id amixer set Capture nocap
 exec --no-startup-id feedreader --headless
 exec --no-startup-id ~/.local/bin/mon-toggle
 exec --no-startup-id ~/.local/bin/lockscreen -d
@@ -86,18 +87,20 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 #bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+
+# Microphone
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle
+bindsym $mod+XF86AudioRaiseVolume exec --no-startup-id pactl set-source-volume 1 +5%
+bindsym $mod+XF86AudioLowerVolume exec --no-startup-id pactl set-source-volume 1 -5%
 
 # Media player controls
 bindsym XF86AudioPlay exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym XF86AudioPause exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym XF86AudioNext exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 bindsym XF86AudioPrev exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
-
-# Microphone
-bindsym XF86AudioMicMute exec pulseaudio-ctl mute-input #toggle
 
 #firefox bughelper
 bindsym $mod+^ floating toggle; floating toggle;
