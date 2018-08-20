@@ -18,6 +18,7 @@
 			["mkdir -p ~/.config/dunst", "Creating dunst dir"],
 			["mkdir -p ~/.config/pacaur", "Creating pacaur dir"],
 			["mkdir -p ~/.config/redshift/hooks", "Creating redshift dir"]
+			["mkdir -p ~/.vim/", "Creating vim dir"]
 		]
 	},
 	{
