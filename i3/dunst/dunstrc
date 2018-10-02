@@ -224,9 +224,6 @@
 [fullscreen_show_critical]
     msg_urgency = critical
     fullscreen = show
-[fullscreen_show_pulseaudio]
-    appname = "pulseaudio-ctl"
-    fullscreen = show
 
 [VLC]
     appname = VLC media player
