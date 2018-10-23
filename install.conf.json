@@ -34,7 +34,6 @@
 			"~/.local/bin/mon-toggle": "bin/mon-toggle.sh",
 			"~/.gitconfig": "git/gitconfig",
 			"~/.local/bin/diff-so-fancy": "git/diff-so-fancy/diff-so-fancy",
-			"~/.local/bin/diff-highlight": "git/diff-so-fancy/third_party/diff-highlight/diff-highlight",
 			"~/.config/i3/config": "i3/i3config",
 			"~/.config/i3status/config": "i3/i3status",
 			"~/.local/bin/checknofullscreen": "i3/checknofullscreen.sh",
