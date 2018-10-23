@@ -13,6 +13,7 @@
 		"shell": [
 			["mkdir -p ~/.profile.d/", "Creating local profile dir"],
 			["mkdir -p ~/.local/bin", "Creating local bin dir"],
+			["mkdir -p ~/.config/alacritty", "Creating alacritty-config dir"],
 			["mkdir -p ~/.config/i3", "Creating i3-config dir"],
 			["mkdir -p ~/.config/i3status", "Creating i3-status dir"],
 			["mkdir -p ~/.config/dunst", "Creating dunst dir"],
@@ -26,6 +27,7 @@
 			"~/.dotfiles": "",
 			"~/.bashrc": "bash/bashrc",
 			"~/.bash_profile": "bash/bashrc",
+			"~/.config/alacritty/alacritty.yml": "alacritty/alacritty.yml",
 			"~/.liquidprompt": "bash/liquidprompt",
 			"~/.local/bin/host-is-on": "bin/host-is-on.sh",
 			"~/.local/bin/mdo": "bin/mdo.sh",
