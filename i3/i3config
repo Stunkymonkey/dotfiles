@@ -112,7 +112,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exit
 
 # start a terminal
-bindsym $mod+Return exec TERMINAL=gnome-terminal i3-sensible-terminal
+bindsym $mod+Return exec TERMINAL=alacritty i3-sensible-terminal
 
 # screensaver
 bindsym $mod+z exec ~/.local/bin/lockscreen -fl
