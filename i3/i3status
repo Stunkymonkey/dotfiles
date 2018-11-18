@@ -70,6 +70,7 @@ battery all {
 	last_full_capacity = true
 	low_threshold = 10
 	threshold_type = percentage
+	hide_seconds = true
 }
 
 memory {
