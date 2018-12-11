@@ -2,5 +2,5 @@
 Description=Webcam script
 
 [Service]
-ExecStart=/home/felix/.dotfiles/cron/webcam.sh
+ExecStart=/home/felix/.dotfiles/systemd/webcam.sh
 Type=oneshot
