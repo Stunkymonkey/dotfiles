@@ -1,0 +1,6 @@
+[Unit]
+Description=Borg-notification
+
+[Service]
+ExecStart=/home/felix/.dotfiles/systemd/borg-notify.sh
+Type=oneshot

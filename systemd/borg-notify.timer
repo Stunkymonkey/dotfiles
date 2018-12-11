@@ -1,0 +1,9 @@
+[Unit]
+Description=10 min borg-notification
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=10min 
+
+[Install]
+WantedBy=timers.target
