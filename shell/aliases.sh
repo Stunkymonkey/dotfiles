@@ -85,7 +85,7 @@ alias cmdlist='find $(echo $PATH | tr ":" "\n") | awk -F / "{print \$NF}" | sort
 alias makepasswd='makepasswd --minchars=10 --maxchars=25 --count=10'
 alias shuttle='sshuttle --dns -r uberspace 0/0'
 
-alias backup='vdirsyncer sync && sudo borgmatic -v 1 && echo $(date +"%Y%m%d") > ~/.borgbackup.log'
+alias backup='vdirsyncer sync && sudo borgmatic --prune --stats && sudo borgmatic --create --progress --stats && echo $(date +"%Y%m%d") > ~/.borgbackup.log'
 
 alias vnc-temp='x11vnc -display :0 -nap -wait 50 -noxdamage -forever -rfbauth ~/.vnc/passwd -speeds 50,1,1'
 
