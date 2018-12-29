@@ -50,7 +50,7 @@ focus_follows_mouse no
 bindsym $mod+Tab workspace next
 bindsym Shift+$mod+Tab workspace prev
 
-bindsym $mod+m exec keepassx2
+bindsym $mod+m exec keepassxc
 bindsym $mod+e exec subl3
 bindsym $mod+w exec firefox
 bindsym $mod+u exec feedreader
