@@ -17,9 +17,9 @@
 			["mkdir -p ~/.config/i3", "Creating i3-config dir"],
 			["mkdir -p ~/.config/i3status", "Creating i3-status dir"],
 			["mkdir -p ~/.config/dunst", "Creating dunst dir"],
-			["mkdir -p ~/.config/pacaur", "Creating pacaur dir"],
+			["mkdir -p ~/.config/yay", "Creating yay dir"]
 			["mkdir -p ~/.config/redshift/hooks", "Creating redshift dir"],
-			["mkdir -p ~/.vim/", "Creating vim dir"]
+			["mkdir -p ~/.vim/", "Creating vim dir"],
 		]
 	},
 	{
@@ -54,7 +54,7 @@
 			"~/.profile.d/81-fzf.sh": "shell/fzf.sh",
 			"~/.config/redshift.conf": "redshift/redshift.conf",
 			"~/.config/redshift/hooks/hook.sh": "redshift/hook.sh",
-			"~/.config/pacaur/config": "pacaur/config",
+			"~/.config/yay/config.json": "yay/config.json",
 			"~/.tmux.conf": "tmux/tmux.conf",
 			"~/.toprc": "top/toprc",
 			"~/.config/htop/htoprc": "top/htoprc",

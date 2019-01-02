@@ -99,7 +99,7 @@ alias key-repair-all='wget -q http://archive.getdeb.net/getdeb-archive.key -O- |
 
 # ARCH:
 alias pacman-update='sudo pacman -Syu'
-alias pacaur-update='pacaur -Syua'
+alias aur-update='yay -Syua'
 
 # DOTFILES:
 alias dotfile-update-submodules='cd ~/.dotfiles/ && git submodule foreach git pull origin master'
