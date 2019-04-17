@@ -6,13 +6,6 @@ alias cd..="cd .."
 alias gits="git status"
 alias gl="git log --oneline --all --abbrev-commit --graph --decorate --color"
 alias subl='subl3'
-alias ddd="killall -USR1 dd"
-alias sddd="sudo killall -USR1 dd"
-
-alias killlall="killall"
-alias kilall="killall"
-alias kilal="killall"
-alias killlal="killall"
 
 alias les="less"
 
