@@ -14,12 +14,13 @@
 			["mkdir -p ~/.profile.d/", "Creating local profile dir"],
 			["mkdir -p ~/.local/bin", "Creating local bin dir"],
 			["mkdir -p ~/.config/alacritty", "Creating alacritty-config dir"],
+			["mkdir -p ~/.config/dunst", "Creating dunst dir"],
 			["mkdir -p ~/.config/i3", "Creating i3-config dir"],
 			["mkdir -p ~/.config/i3status", "Creating i3-status dir"],
-			["mkdir -p ~/.config/dunst", "Creating dunst dir"],
-			["mkdir -p ~/.config/yay", "Creating yay dir"]
 			["mkdir -p ~/.config/redshift/hooks", "Creating redshift dir"],
-			["mkdir -p ~/.vim/", "Creating vim dir"],
+			["mkdir -p ~/.config/sway", "Creating sway dir"],
+			["mkdir -p ~/.config/yay", "Creating yay dir"],
+			["mkdir -p ~/.vim/", "Creating vim dir"]
 		]
 	},
 	{
@@ -54,14 +55,17 @@
 			"~/.profile.d/81-fzf.sh": "shell/fzf.sh",
 			"~/.config/redshift.conf": "redshift/redshift.conf",
 			"~/.config/redshift/hooks/hook.sh": "redshift/hook.sh",
-			"~/.config/yay/config.json": "yay/config.json",
+			"~/.config/sway/config": "sway/config",
+			"~/.config/sway/thinkman": "sway/thinkman",
 			"~/.tmux.conf": "tmux/tmux.conf",
 			"~/.toprc": "top/toprc",
 			"~/.config/htop/htoprc": "top/htoprc",
 			"~/.vimrc": "vim/wuman-vimrc/vimrc",
 			"~/.vim/bundle": "vim/wuman-vimrc/bundle",
 			"~/.wgetrc": "wget/wgetrc",
-			"~/.Xresources": "i3/Xresources"
+			"~/.Xresources": "i3/Xresources",
+			"~/.Xdefaults": "sway/Xdefaults",
+			"~/.config/yay/config.json": "yay/config.json"
 		}
 	},
 	{
