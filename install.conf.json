@@ -39,7 +39,7 @@
 			"~/.local/bin/checknofullscreen": "i3/checknofullscreen.sh",
 			"~/.local/bin/clean": "bin/clean.sh",
 			"~/.local/bin/lockscreen": "i3/lockscreen.sh",
-			"~/.config/dunst/dunstrc": "i3/dunst/dunstrc",
+			"~/.config/dunst/dunstrc": "dunst/dunstrc",
 			"~/.profile.d/load": "shell/load",
 			"~/.profile.d/10-vars.sh": "shell/vars.sh",
 			"~/.profile.d/10-paths.sh": "shell/paths.sh",
