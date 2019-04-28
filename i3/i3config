@@ -18,7 +18,7 @@ exec --no-startup-id ~/.local/bin/mon-toggle
 exec --no-startup-id ~/.local/bin/lockscreen -d
 exec --no-startup-id albert
 exec --no-startup-id nextcloud
-exec --no-startup-id syncthing-gtk
+exec --no-startup-id QSyncthingTray
 exec --no-startup-id telegram-desktop -startintray
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent 
 exec --no-startup-id redshift-gtk
@@ -29,6 +29,7 @@ font pango:Fira Sans Mono 12
 # make some windows floating
 for_window [class="Firefox" window_role="About"] floating enable
 for_window [class="Nightly" window_role="About"] floating enable
+for_window [class="evolution-alarm-notify"] floating enable
 assign [title="^pdfpc- presentation"] output right
 assign [title="^pdfpc- presenter"] output primary
 for_window [class="Pavucontrol"] floating enable
@@ -102,9 +103,6 @@ bindsym XF86AudioPlay exec dbus-send --type=method_call --dest=org.mpris.MediaPl
 bindsym XF86AudioPause exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym XF86AudioNext exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 bindsym XF86AudioPrev exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
-
-#firefox bughelper
-bindsym $mod+^ floating toggle; floating toggle;
 
 # main commands
 bindsym $mod+Shift+c reload
