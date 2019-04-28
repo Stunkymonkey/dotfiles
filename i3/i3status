@@ -16,6 +16,7 @@ order += "cpu_usage"
 order += "cpu_temperature 1"
 order += "load"
 order += "memory"
+#order += "volume input"
 order += "volume master"
 order += "battery all"
 order += "tztime local"
@@ -40,8 +41,12 @@ disk "/home" {
 volume master {
 	format = " %volume"
 	format_muted = ""
-	device = "default"
-	mixer = "Master"
+}
+
+volume input {
+    format = "%volume"
+    format_muted = ""
+    mixer = "Capture"
 }
 
 ipv6 {
