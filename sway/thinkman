@@ -1,7 +1,10 @@
-output "HDMI-A-3" {
+# outputs
+
+output * {
 	position 1600,0
-	resolution 1920x1080
-	scale 1.0
+}
+output "LVDS-1" {
+	position 0,180
 }
 
 input "2:7:SynPS/2_Synaptics_TouchPad" {

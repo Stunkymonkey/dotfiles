@@ -12,19 +12,12 @@ set $term "alacritty"
 
 # keyboard layout
 input * {
-	xkb_layout de,us
-	xkb_variant nodeadkeys
-	xkb_options caps:escape
-	xkb_options grp:win_space_toggle
+	xkb_layout "de,us"
+	xkb_variant "nodeadkeys"
+	xkb_options "caps:escape,grp:win_space_toggle"
 	xkb_numlock enabled
 }
 seat * hide_cursor 10000
-
-# outputs
-output "LVDS-1" {
-	position 0,180
-	resolution 1600x900
-}
 
 # background
 output * bg #2F343F solid_color
