@@ -58,8 +58,7 @@ for_window [instance="update_installer"] floating enable
 for_window [class="Firefox" window_role="About"] floating enable
 for_window [class="Nightly" window_role="About"] floating enable
 for_window [class="evolution-alarm-notify"] floating enable
-assign [title="^pdfpc- presentation"] output right
-assign [title="^pdfpc- presenter"] output primary
+for_window [title="^pdfpc - presentation"] move container to output right
 
 # Stick windows to workspaces
 assign [app_id="feedreader"] 8
