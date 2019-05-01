@@ -17,6 +17,7 @@ input * {
 	xkb_options "caps:escape,grp:win_space_toggle"
 	xkb_numlock enabled
 }
+# hide cursor after 10 sec
 seat * hide_cursor 10000
 
 # background
@@ -27,8 +28,6 @@ output * bg #2F343F solid_color
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec nm-applet
 exec gnome-keyring-daemon --start --components secrets
-# mute microfone
-exec amixer set Capture nocap
 exec swayidle \
 	timeout 285 'notify-send -a lockscreen -c lock-warn -u critical -t 100 -i system-lock-screen "Locking Screen" "Will Lock Screen in 15s"' \
 	timeout 300 '~/.dotfiles/sway/lock.sh' \
@@ -42,6 +41,9 @@ exec /usr/lib/geoclue-2.0/demos/agent
 exec redshift-gtk -m wayland
 exec nextcloud
 exec feedreader --headless
+
+# mute microfone
+exec amixer set Capture nocap
 
 # font
 font pango:Fira Code 12
@@ -124,7 +126,6 @@ bindsym --locked XF86AudioPrev exec dbus-send --type=method_call --dest=org.mpri
 
 # main commands
 bindsym $mod+Shift+c reload
-bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exit
 
 # start a terminal
