@@ -161,10 +161,10 @@ bindsym $mod+s focus child
 # focus the parent container
 bindsym $mod+a focus parent
 
-bindsym Mod1+Left	move workspace to output left
-bindsym Mod1+Right	move workspace to output right
-bindsym Mod1+Up		move workspace to output up
-bindsym Mod1+Down	move workspace to output down
+bindsym Alt+Left	move workspace to output left
+bindsym Alt+Right	move workspace to output right
+bindsym Alt+Up		move workspace to output up
+bindsym Alt+Down	move workspace to output down
 
 # switch to workspace
 bindsym $mod+1 workspace 1
