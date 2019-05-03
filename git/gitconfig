@@ -33,6 +33,10 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[color.blame]
+	repeatedLines = yellow
+[blame]
+	coloring = repeatedLines
 [color "diff-highlight"]
 	oldNormal = red
 	oldHighlight = red bold 52
