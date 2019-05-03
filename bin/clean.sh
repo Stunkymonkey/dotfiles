@@ -4,6 +4,7 @@ case "$1" in
 	all)
 		$0 docker
 		$0 pacman
+		$0 yay
 		;;
 	docker)
 		docker container prune --force
@@ -12,6 +13,9 @@ case "$1" in
 	pacman)
 		pacman -Sc
 		;;
+	yay)
+	    yay -Sacc
+        ;;
 	*)
 		echo "Please give parameter of: [all docker pacman]"
 		;;
