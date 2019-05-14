@@ -34,7 +34,7 @@ exec swayidle \
 	timeout 600 'swaymsg "output * dpms off"' \
 	resume 'swaymsg "output * dpms on"' \
 	before-sleep '~/.dotfiles/sway/lock.sh'
-exec albert
+exec dunst
 exec QSyncthingTray
 exec telegram-desktop -startintray
 exec /usr/lib/geoclue-2.0/demos/agent
