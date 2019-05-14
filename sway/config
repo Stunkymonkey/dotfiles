@@ -46,7 +46,7 @@ exec feedreader --headless
 exec amixer set Capture nocap
 
 # font
-font pango:Fira Code 12
+font pango:Fira Sans Mono 12
 
 # default floating
 for_window [window_role="pop-up"] floating enable
