@@ -1,0 +1,10 @@
+configuration {
+	modi: "drun,ssh";
+	lines: 10;
+	font: "Fira Sans Mono 18";
+	show-icons: true;
+	terminal: "alacritty";
+	icon-theme: "numix";
+	sort: true;
+	theme: "arc-dark";
+}

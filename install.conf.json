@@ -19,6 +19,7 @@
 			["mkdir -p ~/.config/i3", "Creating i3-config dir"],
 			["mkdir -p ~/.config/i3status", "Creating i3-status dir"],
 			["mkdir -p ~/.config/redshift/hooks", "Creating redshift dir"],
+			["mkdir -p ~/.config/rofi", "Creating rofi dir"],
 			["mkdir -p ~/.config/sway", "Creating sway dir"],
 			["mkdir -p ~/.config/yay", "Creating yay dir"],
 			["mkdir -p ~/.vim/", "Creating vim dir"]
@@ -56,6 +57,9 @@
 			"~/.profile.d/81-fzf.sh": "shell/fzf.sh",
 			"~/.config/redshift.conf": "redshift/redshift.conf",
 			"~/.config/redshift/hooks/hook.sh": "redshift/hook.sh",
+			"~/.config/rofi/config.rasi": "rofi/config.rasi",
+			"~/.config/rofi/arc-dark.rasi": "rofi/arc-dark.rasi",
+			"~/.config/rofi/system.sh": "rofi/system.sh",
 			"~/.config/sway/config": "sway/config",
 			"~/.config/sway/thinkman": "sway/thinkman",
 			"~/.tmux.conf": "tmux/tmux.conf",
