@@ -76,6 +76,7 @@ alias mon-update="xrandr --auto"
 alias pwedit="sudo vim -p /etc/{passwd,group,shadow,gshadow}"
 alias cmdlist='find $(echo $PATH | tr ":" "\n") | awk -F / "{print \$NF}" | sort -u'
 alias makepasswd='makepasswd --minchars=10 --maxchars=25 --count=10'
+alias ssh-keygen-save="ssh-keygen -o -a 64 -t ed25519"
 alias shuttle='sshuttle --dns -r uberspace 0/0'
 
 alias backup='vdirsyncer sync && sudo borgmatic --prune --stats && sudo borgmatic --create --progress --stats && echo $(date +"%Y%m%d") > ~/.borgbackup.log'
@@ -83,7 +84,8 @@ alias backup='vdirsyncer sync && sudo borgmatic --prune --stats && sudo borgmati
 alias vnc-temp='x11vnc -display :0 -nap -wait 50 -noxdamage -forever -rfbauth ~/.vnc/passwd -speeds 50,1,1'
 
 alias notify='notify-send Terminal "Process has been finished"'
-alias screen-off='xset -display :0.0 dpms force off'
+alias screen-off-x='xset -display :0.0 dpms force off'
+alias screen-off-wl="swayidle timeout 1 'swaymsg \"output * dpms off\"' resume 'swaymsg \"output * dpms on\"; pkill -n swayidle'"
 
 # DEBIAN:
 alias sag='sudo apt-get'
