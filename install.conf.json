@@ -42,6 +42,7 @@
 			"~/.local/bin/checknofullscreen": "i3/checknofullscreen.sh",
 			"~/.local/bin/clean": "bin/clean.sh",
 			"~/.local/bin/lockscreen": "i3/lockscreen.sh",
+			"~/.local/bin/lock": "sway/lock.sh",
 			"~/.config/dunst/dunstrc": "dunst/dunstrc",
 			"~/.profile.d/load": "shell/load",
 			"~/.profile.d/10-vars.sh": "shell/vars.sh",
@@ -69,7 +70,6 @@
 			"~/.vim/bundle": "vim/wuman-vimrc/bundle",
 			"~/.wgetrc": "wget/wgetrc",
 			"~/.Xresources": "i3/Xresources",
-			"~/.Xdefaults": "sway/Xdefaults",
 			"~/.config/yay/config.json": "yay/config.json"
 		}
 	},
