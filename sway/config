@@ -62,9 +62,8 @@ for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [instance="update_installer"] floating enable
 # custom floating
-for_window [class="Firefox" window_role="About"] floating enable
-for_window [class="Nightly" window_role="About"] floating enable
-for_window [class="evolution-alarm-notify"] floating enable
+for_window [app_id="firefox" title="About Mozilla Firefox"] floating enable
+for_window [app_id="firefox-developer-edition" title="About Firefox Developer Edition"] floating enable
 for_window [title="^pdfpc - presentation"] move container to output right
 
 # Stick windows to workspaces
