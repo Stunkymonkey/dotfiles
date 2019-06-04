@@ -45,6 +45,11 @@ exec feedreader --headless
 # mute microfone
 exec amixer set Capture nocap
 
+# prevent locking when fullscreen
+for_window [app_id="firefox"] inhibit_idle fullscreen
+for_window [title="VLC media player"] inhibit_idle fullscreen
+for_window [app_id="evince"] inhibit_idle fullscreen
+
 # font
 font pango:Fira Sans Mono 12
 
