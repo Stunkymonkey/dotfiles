@@ -145,6 +145,15 @@ bindsym $mod+d exec rofi -show || albert toggle || albert
 bindsym $mod+Shift+d exec ~/.dotfiles/rofi/system.sh
 bindsym Alt+Space exec rofi -show
 
+# gtk3
+set $gnome-schema org.gnome.desktop.interface
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Arc-Darker'
+    gsettings set $gnome-schema icon-theme 'Numix-Circle'
+    gsettings set $gnome-schema cursor-theme 'Adwaita'
+}
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
