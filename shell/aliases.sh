@@ -78,6 +78,7 @@ alias cmdlist='find $(echo $PATH | tr ":" "\n") | awk -F / "{print \$NF}" | sort
 alias makepasswd='makepasswd --minchars=10 --maxchars=25 --count=10'
 alias ssh-keygen-save="ssh-keygen -o -a 64 -t ed25519"
 alias shuttle='sshuttle --dns -r uberspace 0/0'
+alias mosh-uberspace="mosh uberspace -p 40201"
 
 alias backup='vdirsyncer sync && sudo borgmatic --prune --stats && sudo borgmatic --create --progress --stats && echo $(date +"%Y%m%d") > ~/.borgbackup.log'
 
