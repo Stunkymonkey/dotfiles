@@ -85,7 +85,12 @@ alias backup='vdirsyncer sync && sudo borgmatic --prune --stats && sudo borgmati
 alias vnc-temp='x11vnc -display :0 -nap -wait 50 -noxdamage -forever -rfbauth ~/.vnc/passwd -speeds 50,1,1'
 
 alias notify='notify-send Terminal "Process has been finished"'
+
+# xorg
 alias screen-off-x='xset -display :0.0 dpms force off'
+
+# wayland:
+alias pdfpc="pdfpc --wayland-workaround"
 alias screen-off-wl="swayidle timeout 1 'swaymsg \"output * dpms off\"' resume 'swaymsg \"output * dpms on\"; pkill -n swayidle'"
 
 # DEBIAN:

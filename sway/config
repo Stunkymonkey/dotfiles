@@ -65,7 +65,7 @@ for_window [instance="update_installer"] floating enable
 # custom floating
 for_window [app_id="firefox" title="About Mozilla Firefox"] floating enable
 for_window [app_id="firefox-developer-edition" title="About Firefox Developer Edition"] floating enable
-for_window [title="^pdfpc - presentation"] move container to output right
+#for_window [title="^pdfpc - presentation"] move container to output right
 
 # Stick windows to workspaces
 assign [app_id="feedreader"] 8
