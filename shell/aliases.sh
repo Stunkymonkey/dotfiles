@@ -1,7 +1,6 @@
 #!/bin/sh
 
 #alias definitions
-alias chmox="chmod +x"
 alias cd..="cd .."
 alias gits="git status"
 alias subl='subl3'
@@ -70,8 +69,6 @@ if [ ! -z "$(type sudo 2>/dev/null)" -a "$USER" != 'root' ]; then
 	}
 fi
 
-alias mon-update="xrandr --auto"
-
 alias pwedit="sudo vim -p /etc/{passwd,group,shadow,gshadow}"
 alias cmdlist='find $(echo $PATH | tr ":" "\n") | awk -F / "{print \$NF}" | sort -u'
 alias makepasswd='makepasswd --minchars=10 --maxchars=25 --count=10'
@@ -87,6 +84,7 @@ alias notify='notify-send Terminal "Process has been finished"'
 
 # xorg
 alias screen-off-x='xset -display :0.0 dpms force off'
+alias mon-update="xrandr --auto"
 
 # wayland:
 alias pdfpc="pdfpc --wayland-workaround"
