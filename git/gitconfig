@@ -15,10 +15,12 @@
 	eol = native
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [alias]
-	ct         = log --graph --decorate --pretty=oneline --abbrev-commit
-	committree = log --graph --decorate --pretty=oneline --abbrev-commit
+	committree = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ct = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	d = difftool
 	git = !exec git
+	s = status
+	unstage = reset HEAD --
 [rerere]
 	enabled = true
 [branch]

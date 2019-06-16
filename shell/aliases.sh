@@ -4,7 +4,6 @@
 alias chmox="chmod +x"
 alias cd..="cd .."
 alias gits="git status"
-alias gl="git log --oneline --all --abbrev-commit --graph --decorate --color"
 alias subl='subl3'
 
 alias les="less"
