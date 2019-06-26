@@ -50,6 +50,7 @@ for_window [app_id="firefox"] inhibit_idle fullscreen
 for_window [class="Firefox"] inhibit_idle fullscreen
 for_window [title="VLC media player"] inhibit_idle fullscreen
 for_window [app_id="evince"] inhibit_idle fullscreen
+for_window [class="mpv"] inhibit_idle fullscreen
 
 # font
 font pango:Fira Sans Mono 12
