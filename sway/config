@@ -80,7 +80,7 @@ focus_follows_mouse no
 bindsym $mod+Tab workspace next
 bindsym Shift+$mod+Tab workspace prev
 
-bindsym $mod+m exec eval $(keychain -q --nogui --agents ssh --timeout 600 --eval) && keepassxc
+bindsym $mod+m exec . ~/.profile.d/90-keychain.sh && keepassxc
 bindsym $mod+e exec subl3
 bindsym $mod+w exec firefox
 bindsym $mod+u exec feedreader

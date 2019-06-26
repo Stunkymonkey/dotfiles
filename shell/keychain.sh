@@ -1,12 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-# array to process, either folders or directories for recursive processing
-KEYPATHS+=("$HOME/.ssh")
-
+# Assert an ssh-agent (which is empty at the beginning)
 if command -v keychain 2>&1 >/dev/null; then
-	eval \
-        "$(find "${KEYPATHS[@]}" -type f -name '*.pub' 2>/dev/null \
-		| sed 's/.pub$//' \
-        | xargs keychain -q --nogui --agents ssh --timeout 600 --eval)"
+	eval $(keychain -q --nogui --agents ssh --timeout 600 --eval)
 fi
-unset KEYPATHS
+
