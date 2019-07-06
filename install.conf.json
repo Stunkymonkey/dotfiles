@@ -22,7 +22,7 @@
 			["mkdir -p ~/.config/rofi", "Creating rofi dir"],
 			["mkdir -p ~/.config/sway", "Creating sway dir"],
 			["mkdir -p ~/.config/yay", "Creating yay dir"],
-			["mkdir -p ~/.vim/", "Creating vim dir"]
+			["mkdir -p ~/.vim/pack/dotfiles/", "Creating vim dir"]
 		]
 	},
 	{
@@ -66,8 +66,9 @@
 			"~/.tmux.conf": "tmux/tmux.conf",
 			"~/.toprc": "top/toprc",
 			"~/.config/htop/htoprc": "top/htoprc",
-			"~/.vimrc": "vim/wuman-vimrc/vimrc",
-			"~/.vim/bundle": "vim/wuman-vimrc/bundle",
+			"~/.vimrc": "vim/vimrc",
+			"~/.vim/pack/dotfiles/start": "vim/start",
+			"~/.vim/pack/dotfiles/opt": "vim/opt",
 			"~/.wgetrc": "wget/wgetrc",
 			"~/.Xresources": "i3/Xresources",
 			"~/.config/yay/config.json": "yay/config.json"

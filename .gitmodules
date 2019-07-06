@@ -1,10 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "vim/wuman-vimrc"]
-	path = vim/wuman-vimrc
-	url = https://github.com/wuman/vimrc
-	ignore = dirty
 [submodule "git/diff-so-fancy"]
 	path = git/diff-so-fancy
 	url = https://github.com/so-fancy/diff-so-fancy
@@ -14,3 +10,48 @@
 [submodule "cron/blackcheck"]
 	path = cron/blackcheck
 	url = https://github.com/Stunkymonkey/blackcheck.git
+[submodule "vim/bundle/fzf.vim"]
+	path = vim/bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "vim/start/editorconfig-vim"]
+	path = vim/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "vim/start/vim-eunuch"]
+	path = vim/start/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch.git
+[submodule "vim/start/auto-pairs"]
+	path = vim/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "vim/start/vim-json"]
+	path = vim/start/vim-json
+	url = https://github.com/elzr/vim-json.git
+[submodule "vim/start/nerdcommenter"]
+	path = vim/start/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/start/YouCompleteMe"]
+	path = vim/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "vim/start/vim-surround"]
+	path = vim/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/start/vim-signify"]
+	path = vim/start/vim-signify
+	url = https://github.com/mhinz/vim-signify.git
+[submodule "vim/start/vim-airline"]
+	path = vim/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/start/gruvbox"]
+	path = vim/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "vim/start/vim-fugitive"]
+	path = vim/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/start/tabular"]
+	path = vim/start/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/start/ale"]
+	path = vim/start/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "vim/start/nerdtree"]
+	path = vim/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
