@@ -9,7 +9,6 @@
 [merge]
 	defaultToUpstream = true
 	tool = vimdiff
-	template = ~/.git/review-template
 [core]
 	editor = vim
 	eol = native
