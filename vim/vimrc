@@ -209,9 +209,8 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 " Plugins
 "
 " vim-airline
-set timeout timeoutlen=1000 ttimeoutlen=50
-let g:airline_powerline_fonts = 1
 let g:airline_theme = 'badwolf'
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 " JSON.vim http://www.vim.org/scripts/script.php?script_id=1945
