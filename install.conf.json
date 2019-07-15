@@ -76,7 +76,8 @@
 	},
 	{
 		"shell": [
-			["git submodule update --init --jobs $(nproc) --recursive", "Installing submodules"]
+			["git submodule update --init --jobs $(nproc) --recursive", "Installing submodules"],
+			["cd vim/start/YouCompleteMe && python3 install.py --all"]
 		]
 	}
 ]
