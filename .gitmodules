@@ -31,6 +31,7 @@
 [submodule "vim/start/YouCompleteMe"]
 	path = vim/start/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
+	ignore = dirty
 [submodule "vim/start/vim-surround"]
 	path = vim/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
@@ -55,3 +56,9 @@
 [submodule "vim/start/nerdtree"]
 	path = vim/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/start/badwolf"]
+	path = vim/start/badwolf
+	url = https://github.com/sjl/badwolf.git
+[submodule "vim/start/vim-airline-themes"]
+	path = vim/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
