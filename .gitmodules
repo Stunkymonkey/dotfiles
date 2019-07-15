@@ -22,9 +22,6 @@
 [submodule "vim/start/auto-pairs"]
 	path = vim/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
-[submodule "vim/start/vim-json"]
-	path = vim/start/vim-json
-	url = https://github.com/elzr/vim-json.git
 [submodule "vim/start/nerdcommenter"]
 	path = vim/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
@@ -41,9 +38,6 @@
 [submodule "vim/start/vim-airline"]
 	path = vim/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule "vim/start/gruvbox"]
-	path = vim/start/gruvbox
-	url = https://github.com/morhetz/gruvbox.git
 [submodule "vim/start/vim-fugitive"]
 	path = vim/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -62,3 +56,6 @@
 [submodule "vim/start/vim-airline-themes"]
 	path = vim/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/start/vim-polyglot"]
+	path = vim/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
