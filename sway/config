@@ -26,7 +26,7 @@ output * bg #2F343F solid_color
 
 # startup programs
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec nm-applet
+exec nm-applet --indicator
 exec gnome-keyring-daemon --start --components secrets
 exec swayidle \
 	timeout 285 'notify-send -a lockscreen -c lock-warn -u critical -t 100 -i system-lock-screen "Locking Screen" "Will Lock Screen in 15s"' \
