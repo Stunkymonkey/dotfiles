@@ -89,16 +89,16 @@ bindsym $mod+u exec feedreader
 # to prevent gnome-help
 bindsym F1 exec :
 
-# ESP8266
-bindsym $mod+F1 exec curl http://esp8266.local/socket0Toggle
-bindsym $mod+Shift+F1 exec curl http://esp8266.local/socket0Off
-bindsym $mod+F2 exec curl http://esp8266.local/socket1Toggle
-bindsym $mod+Shift+F2 exec curl http://esp8266.local/socket1Off
-
-bindsym $mod+F11 exec curl http://esp8266.local/socket2Toggle
-bindsym $mod+Shift+F11 exec curl http://esp8266.local/socket2Off
-bindsym $mod+F12 exec curl http://esp8266.local/socket3Toggle
-bindsym $mod+Shift+F12 exec curl http://esp8266.local/socket3Off
+# script shortcuts
+set $keyboard ~/.local/bin/keyboard
+bindsym $mod+F1			exec $keyboard-f1
+bindsym $mod+Shift+F1	exec $keyboard-shift-f1
+bindsym $mod+F2			exec $keyboard-f2
+bindsym $mod+Shift+F2	exec $keyboard-shift-f2
+bindsym $mod+F3			exec $keyboard-f3
+bindsym $mod+Shift+F3	exec $keyboard-shift-f3
+bindsym $mod+F4			exec $keyboard-f4
+bindsym $mod+Shift+F4	exec $keyboard-shift-f4
 
 # Screenshot
 bindsym Print exec "grim ~/Downloads/Screenshot-$(date +'%Y-%m-%d_%H%M%S.png')"
@@ -149,7 +149,6 @@ bindsym Alt+Space exec rofi -show
 
 # gtk3
 set $gnome-schema org.gnome.desktop.interface
-
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Arc-Darker'
     gsettings set $gnome-schema icon-theme 'Numix-Circle'
