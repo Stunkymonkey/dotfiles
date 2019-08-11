@@ -7,9 +7,6 @@
 [submodule "bash/liquidprompt"]
 	path = bash/liquidprompt
 	url = https://github.com/nojhan/liquidprompt
-[submodule "cron/blackcheck"]
-	path = cron/blackcheck
-	url = https://github.com/Stunkymonkey/blackcheck.git
 [submodule "vim/bundle/fzf.vim"]
 	path = vim/bundle/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
