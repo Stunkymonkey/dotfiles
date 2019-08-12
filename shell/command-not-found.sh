@@ -1,3 +1,4 @@
 #!/bin/sh
 
-[ -r /etc/profile.d/cnf.sh ] && . /etc/profile.d/cnf.sh
+# arch
+[ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
