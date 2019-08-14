@@ -1,4 +1,11 @@
 #!/bin/sh
 
 # arch
-[ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
+if [ "${BASH_VERSION}" ] && [ -r /usr/share/doc/pkgfile/command-not-found.bash ]; then
+	. /usr/share/doc/pkgfile/command-not-found.bash
+fi
+
+if [ "${ZSH_VERSION}" ] && [ -r /usr/share/doc/pkgfile/command-not-found.zsh ]; then
+	. /usr/share/doc/pkgfile/command-not-found.zsh
+fi
+
