@@ -36,7 +36,6 @@
 			"~/.local/bin/mdo": "bin/mdo.sh",
 			"~/.local/bin/mon-toggle": "bin/mon-toggle.sh",
 			"~/.gitconfig": "git/gitconfig",
-			"~/.local/bin/diff-so-fancy": "git/diff-so-fancy/diff-so-fancy",
 			"~/.config/i3/config": "i3/i3config",
 			"~/.config/i3status/config": "i3/i3status",
 			"~/.local/bin/checknofullscreen": "i3/checknofullscreen.sh",
@@ -68,7 +67,6 @@
 			"~/.config/htop/htoprc": "top/htoprc",
 			"~/.vimrc": "vim/vimrc",
 			"~/.vim/pack/dotfiles/start": "vim/start",
-			"~/.vim/pack/dotfiles/opt": "vim/opt",
 			"~/.wgetrc": "wget/wgetrc",
 			"~/.Xresources": "i3/Xresources",
 			"~/.config/yay/config.json": "yay/config.json"
@@ -79,5 +77,10 @@
 			["git submodule update --init --jobs $(nproc) --recursive", "Installing submodules"],
 			["cd vim/start/YouCompleteMe && python3 install.py --all"]
 		]
+	},
+	{
+		"link": {
+			"~/.local/bin/diff-so-fancy": "git/diff-so-fancy/diff-so-fancy"
+		}
 	}
 ]
