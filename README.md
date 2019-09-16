@@ -4,9 +4,8 @@ These are my personal dotfiles. Free for personal use. Thanks to [@bebehei](http
 
 # My configured software
 
-* i3 (window manager)
-    * lockscreen support and autolock after idle
-    * multi-monitor-setup via xmon
+* sway (wayland: window manager)
+* i3 (xorg: window manager) (maybe outdated)
 * vim
     * forked off [vimrc](https://github.com/bebehei/vimrc/)
     * NerdTree, autocompletion
