@@ -21,7 +21,7 @@ input * {
 seat * hide_cursor 10000
 
 # background
-output * bg #2F343F solid_color
+output * bg #0C0C0D solid_color
 #output * bg wallpaper.png fit
 
 # startup programs
@@ -264,8 +264,8 @@ mode "passthrough" {
 bindsym $mod+Escape mode "passthrough"
 
 # colors
-set $color_bg				#2F343F
-set $color_bg_inactive		#2F343F
+set $color_bg				#0C0C0D
+set $color_bg_inactive		#0C0C0D
 set $color_text				#F3F4F5
 set $color_text_inactive	#676E7D
 set $color_bg_urgent		#E53935
@@ -273,7 +273,7 @@ set $color_indicator		#00FF00
 
 set $color_separator		#666666
 set $color_ws				#5294E2
-set $color_ws_inactive		#2F343F
+set $color_ws_inactive		#0C0C0D
 set $color_ws_text			#FFFFFF
 set $color_ws_text_inactive	#D3DAE3
 

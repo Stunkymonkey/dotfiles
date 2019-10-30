@@ -13,7 +13,7 @@ font:
 
 colors:
   primary:
-    background: '0x000000'
+    background: '0x0C0C0D'
     foreground: '0xFFFFFF'
 
   normal:
