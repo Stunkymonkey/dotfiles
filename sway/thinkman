@@ -3,7 +3,14 @@
 output * {
 	position 1600,0
 }
-output "LVDS-1" {
+output DP-1 {
+  resolution 1920x1080
+}
+
+set $laptop "LVDS-1"
+bindswitch lid:on output $laptop disable
+bindswitch lid:off output $laptop enable
+output $laptop {
 	position 0,180
 }
 
