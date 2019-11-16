@@ -101,8 +101,9 @@ bindsym $mod+F4			exec $keyboard-f4
 bindsym $mod+Shift+F4	exec $keyboard-shift-f4
 
 # Screenshot
-bindsym Print exec "grim ~/Downloads/Screenshot-$(date +'%Y-%m-%d_%H%M%S.png')"
-bindsym $mod+Print exec "slurp | grim -g - ~/Downloads/Screenshot-$(date +'%Y-%m-%d_%H%M%S.png')"
+bindsym Print exec grim ~/Downloads/Screenshot-$(date +'%Y-%m-%d_%H%M%S.png')
+bindsym $mod+Print exec slurp | grim -g - ~/Downloads/Screenshot-$(date +'%Y-%m-%d_%H%M%S.png')
+bindsym $mod+Shift+Print exec swaymsg -t get_tree | jq -r '.. | (.nodes? // empty , .floating_nodes? // empty)[] | select(.focused) | "\(.rect.x),\(.rect.y) \(.rect.width)x\(.rect.height)"' | grim -g - ~/Downloads/Screenshot-$(date +'%Y-%m-%d_%H%M%S.png')
 
 
 # forward an backward at arrow-keys
