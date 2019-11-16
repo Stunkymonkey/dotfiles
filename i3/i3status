@@ -96,5 +96,5 @@ cpu_usage {
 
 cpu_temperature 1 {
 	format = " %degrees°C"
-	path = "/sys/devices/platform/coretemp.0/hwmon/*/temp1_input"
+	path = "/sys/devices/virtual/thermal/thermal_zone0/temp"
 }
