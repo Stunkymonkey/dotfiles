@@ -86,6 +86,12 @@ bindsym $mod+e exec subl3
 bindsym $mod+w exec firefox
 bindsym $mod+u exec feedreader
 
+# dunst
+bindsym $mod+dead_circumflex exec dunstctl close
+bindsym $mod+Shift+dead_circumflex exec dunstctl close-all
+bindsym $mod+minus exec dunstctl history-pop
+bindsym $mod+plus exec dunstctl context
+
 # to prevent gnome-help
 bindsym F1 exec :
 
