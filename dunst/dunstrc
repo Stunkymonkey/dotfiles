@@ -232,11 +232,7 @@
     history_ignore = yes
     set_transient = yes
 [lockscreen]
-    appname = "lockscreen"
-    new_icon = "system-lock-screen"
-    history_ignore = yes
+	appname = "lockscreen"
+	new_icon = "system-lock-screen"
+	history_ignore = yes
 
-# Supergood seafile devs :facepalm:
-[Seafile]
-    appname = "Seafile"
-    new_icon = "seafile"
