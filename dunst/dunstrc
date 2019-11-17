@@ -225,14 +225,21 @@
 	msg_urgency = critical
 	fullscreen = show
 
-[VLC]
-    appname = VLC media player
-    foreground = "#f48b00"
-    new_icon = "vlc"
-    history_ignore = yes
-    set_transient = yes
 [lockscreen]
 	appname = "lockscreen"
 	new_icon = "system-lock-screen"
 	history_ignore = yes
-
+[VLC]
+	appname = VLC media player
+	background = "#f48b00"
+	new_icon = "vlc"
+	history_ignore = yes
+	set_transient = yes
+[rhythmbox]
+	appname = Rhythmbox
+	background = "#f48b00"
+	history_ignore = yes
+	set_transient = yes
+[Telegram]
+	appname = "Telegram Desktop"
+	background = "#0088CC"
