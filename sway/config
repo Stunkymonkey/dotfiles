@@ -67,6 +67,7 @@ for_window [instance="update_installer"] floating enable
 for_window [app_id="firefox" title="About Mozilla Firefox"] floating enable
 for_window [app_id="firefox-developer-edition" title="About Firefox Developer Edition"] floating enable
 for_window [app_id="gnome-calculator"] floating enable
+for_window [app_id="org.gnome.NautilusPreviewer"] floating enable
 
 # Stick windows to workspaces
 assign [app_id="feedreader"] 8
