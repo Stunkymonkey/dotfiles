@@ -21,6 +21,7 @@
 			["mkdir -p ~/.config/redshift/hooks", "Creating redshift dir"],
 			["mkdir -p ~/.config/rofi", "Creating rofi dir"],
 			["mkdir -p ~/.config/sway", "Creating sway dir"],
+			["mkdir -p ~/.config/swaylock", "Creating swaylock dir"],
 			["mkdir -p ~/.config/yay", "Creating yay dir"],
 			["mkdir -p ~/.vim/pack/dotfiles/", "Creating vim dir"]
 		]
@@ -63,6 +64,7 @@
 			"~/.config/rofi/system.sh": "rofi/system.sh",
 			"~/.config/sway/config": "sway/config",
 			"~/.config/sway/thinkman": "sway/thinkman",
+			"~/.config/swaylock/config": "sway/lock",
 			"~/.tmux.conf": "tmux/tmux.conf",
 			"~/.toprc": "top/toprc",
 			"~/.config/htop/htoprc": "top/htoprc",
