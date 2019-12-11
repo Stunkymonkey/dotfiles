@@ -17,6 +17,6 @@ case "$1" in
 	    yay -Sacc --noconfirm
         ;;
 	*)
-		echo "Please give parameter of: [all docker pacman]"
+		echo "Please give parameter of: [all docker pacman yay]"
 		;;
 esac
