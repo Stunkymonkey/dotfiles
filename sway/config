@@ -12,7 +12,7 @@ set $term "alacritty"
 
 # keyboard layout
 input * {
-	xkb_layout "de,us"
+	xkb_layout "gb,de"
 	xkb_variant "nodeadkeys"
 	xkb_options "caps:escape,grp:win_space_toggle"
 	xkb_numlock enabled
