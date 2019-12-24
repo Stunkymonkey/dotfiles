@@ -2,11 +2,6 @@
 "
 " Environment
 "
-" pathogen (must be placed in the beginning of this file)
-"runtime bundle/pathogen/autoload/pathogen.vim
-"call pathogen#infect('bundle/{}')
-"call pathogen#infect('bundle-external/{}')
-"call pathogen#helptags()
 
 if &term == "linux"
 	set t_ve+=[?81;0;112c
@@ -51,6 +46,9 @@ filetype plugin on           " enable filetype-specific plugins
 
 " auto reload vimrc when editing it
 autocmd! BufWritePost .vimrc source ~/.vimrc
+
+" ask for password and write file with sudo rights
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 " disable annoying sound on errors
 set noerrorbells
