@@ -1,0 +1,91 @@
+- defaults:
+    link:
+        relink: true
+
+- clean: ['~']
+
+- create:
+    - ~/.profile.d
+    - ~/.local/bin
+    - ~/.config/alacritty
+    - ~/.config/htop
+    - ~/.config/i3status
+    - ~/.config/mako
+    - ~/.config/redshift/hooks
+    - ~/.config/rofi
+    - ~/.config/sway
+    - ~/.config/swaylock
+    - ~/.config/yay
+    - ~/.config/wofi
+    - ~/.vim/pack/dotfiles
+
+# casual
+- link:
+    ~/.dotfiles: ''
+    ~/.bashrc: bash/bashrc
+    ~/.bash_profile: bash/bashrc
+    ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
+    ~/.liquidprompt: bash/liquidprompt
+    ~/.gitconfig: git/gitconfig
+    ~/.profile.d/load: shell/load
+    ~/.profile.d/10-vars.sh: shell/vars.sh
+    ~/.profile.d/10-paths.sh: shell/paths.sh
+    ~/.profile.d/10-gitrepo-commited.sh: shell/gitrepo-commited.sh
+    ~/.profile.d/10-liquidprompt.sh: shell/liquidprompt.sh
+    ~/.profile.d/20-aliases.sh: shell/aliases.sh
+    ~/.profile.d/20-cd.sh: shell/cd.sh
+    ~/.profile.d/40-extract.sh: shell/extract.sh
+    ~/.profile.d/40-mysqlpw.sh: shell/mysqlpw.sh
+    ~/.profile.d/90-keychain.sh: shell/keychain.sh
+    ~/.profile.d/80-command-not-found.sh: shell/command-not-found.sh
+    ~/.profile.d/81-fzf.sh: shell/fzf.sh
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.toprc: top/toprc
+    ~/.config/htop/htoprc: top/htoprc
+    ~/.vimrc: vim/vimrc
+    ~/.vim/pack/dotfiles/start: vim/start
+    ~/.wgetrc: wget/wgetrc
+    ~/.config/yay/config.json: yay/config.json
+    ~/.Xresources: i3/Xresources
+
+# graphic
+- link:
+    ~/.config/i3status/config: i3/i3status
+    ~/.local/bin/lock: sway/lock.sh
+    ~/.config/systemd/user/swayidle.service: sway/swayidle.service
+    ~/.config/mako/config: mako/config
+    ~/.config/systemd/user/mako.service: mako/mako.service
+    ~/.config/redshift.conf: redshift/redshift.conf
+    ~/.config/redshift/hooks/hook.sh: redshift/hook.sh
+    ~/.config/rofi/config.rasi: rofi/config.rasi
+    ~/.config/rofi/arc-dark.rasi: rofi/arc-dark.rasi
+    ~/.config/rofi/system.sh: rofi/system.sh
+    ~/.config/wofi/config: wofi/config
+    ~/.config/wofi/style.css: wofi/style.css
+    ~/.config/sway/config: sway/config
+    ~/.config/sway/thinkman: sway/thinkman
+    ~/.config/swaylock/config: sway/lock
+    ~/.config/environment.d/sway.conf: sway/env
+
+
+# scripts
+- link:
+    ~/.local/bin/host-is-on: bin/host-is-on.sh
+    ~/.local/bin/mdo: bin/mdo.sh
+    ~/.local/bin/git-authors: bin/git-authors.sh
+    ~/.local/bin/clean: bin/clean.sh
+
+# systemd
+- shell:
+    - ["systemctl enable --user mako", "enable mako"]
+    - ["systemctl enable --user swayidle", "enable swayidle"]
+
+- shell:
+    - ["git submodule update --init --jobs $(nproc) --recursive", "Installing submodules"]
+
+- link:
+    ~/.local/bin/diff-so-fancy: git/diff-so-fancy/diff-so-fancy
+
+- shell:
+    - ["cd vim/start/YouCompleteMe && python3 install.py --all"]
+
