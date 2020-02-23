@@ -1,0 +1,24 @@
+font=Fira Sans Mono 12
+background-color=#5294E2C0
+icon-path=/usr/share/icons/Numix-Circle
+default-timeout=8000
+border-size=2
+border-color=#2F343FC0
+border-radius=5
+max-icon-size=96
+
+[urgency=low]
+text-color=#686D79
+
+[urgency=normal]
+text-color=#E1E5EA
+
+[urgency=high]
+text-color=#E1E5EA
+background-color=#CC575DC0
+
+[app-name="rhythmbox"]
+background-color=#F48B00C0
+
+[app-name="VLC"]
+background-color=#F48B00C0
