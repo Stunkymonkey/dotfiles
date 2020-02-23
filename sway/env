@@ -1,0 +1,19 @@
+# Enable QT apps to have gtk theme  
+QT_QPA_PLATFORMTHEME=qt5ct
+
+# Force wayland on qt apps
+QT_QPA_PLATFORM=wayland
+QT_WAYLAND_FORCE_DPI=96  
+QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+
+# clutter
+CLUTTER_BACKEND=wayland
+
+# sdl2
+SDL_VIDEODRIVER=wayland
+
+# firefox
+MOZ_ENABLE_WAYLAND=1
+
+# java
+_JAVA_AWT_WM_NONREPARENTING=1
