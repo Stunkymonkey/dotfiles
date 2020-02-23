@@ -1,0 +1,16 @@
+[Unit]
+Description=Idle manager for Wayland
+Documentation=man:swayidle(1)
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/swayidle -w \
+	timeout 285 'notify-send -a lockscreen -c lock-warn -u critical -t 14900 -i system-lock-screen "Locking Screen" "Will Lock Screen in 15s"' \
+	timeout 300 '~/.dotfiles/sway/lock.sh' \
+	timeout 600 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"' \
+	before-sleep '~/.dotfiles/sway/lock.sh'
+
+[Install]
+WantedBy=sway-session.target

@@ -28,12 +28,6 @@ output * bg #0C0C0D solid_color
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec nm-applet --indicator
 exec gnome-keyring-daemon --start --components secrets
-exec swayidle \
-	timeout 285 'notify-send -a lockscreen -c lock-warn -u critical -t 100 -i system-lock-screen "Locking Screen" "Will Lock Screen in 15s"' \
-	timeout 300 '~/.dotfiles/sway/lock.sh' \
-	timeout 600 'swaymsg "output * dpms off"' \
-	resume 'swaymsg "output * dpms on"' \
-	before-sleep '~/.dotfiles/sway/lock.sh'
 exec dunst
 exec sleep 2 && QSyncthingTray
 exec telegram-desktop -startintray
