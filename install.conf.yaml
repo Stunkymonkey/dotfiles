@@ -52,9 +52,7 @@
 - link:
     ~/.config/i3status/config: i3/i3status
     ~/.local/bin/lock: sway/lock.sh
-    ~/.config/systemd/user/swayidle.service: sway/swayidle.service
     ~/.config/mako/config: mako/config
-    ~/.config/systemd/user/mako.service: mako/mako.service
     ~/.config/redshift.conf: redshift/redshift.conf
     ~/.config/redshift/hooks/hook.sh: redshift/hook.sh
     ~/.config/rofi/config.rasi: rofi/config.rasi
@@ -76,9 +74,9 @@
     ~/.local/bin/clean: bin/clean.sh
 
 # systemd
-- shell:
-    - ["systemctl enable --user mako", "enable mako"]
-    - ["systemctl enable --user swayidle", "enable swayidle"]
+#- shell:
+#    - ["systemctl enable --user $PWD/mako/mako.service --now", "enable mako"]
+#    - ["systemctl enable --user $PWD/sway/swayidle.service --now", "enable swayidle"]
 
 - shell:
     - ["git submodule update --init --jobs $(nproc) --recursive", "Installing submodules"]

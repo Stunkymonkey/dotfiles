@@ -28,6 +28,13 @@ output * bg #0C0C0D solid_color
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec nm-applet --indicator
 exec gnome-keyring-daemon --start --components secrets
+exec swayidle -w \
+	timeout 285 'notify-send -a lockscreen -c lock-warn -u critical -t 14900 -i system-lock-screen "Locking Screen" "Will Lock Screen in 15s"' \
+	timeout 300 '~/.dotfiles/sway/lock.sh' \
+	timeout 600 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"' \
+	before-sleep '~/.dotfiles/sway/lock.sh'
+exec mako
 exec sleep 2 && QSyncthingTray
 exec telegram-desktop -startintray
 exec /usr/lib/geoclue-2.0/demos/agent
@@ -81,7 +88,7 @@ bindsym $mod+e exec subl3
 bindsym $mod+w exec firefox
 bindsym $mod+u exec feedreader
 
-# dunst
+# mako
 bindsym $mod+dead_circumflex exec makoctl dismiss
 bindsym $mod+Shift+dead_circumflex exec makoctl dismiss --all
 bindsym $mod+grave exec makoctl dismiss
