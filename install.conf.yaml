@@ -8,6 +8,7 @@
     - ~/.profile.d
     - ~/.local/bin
     - ~/.config/alacritty
+    - ~/.config/environment.d
     - ~/.config/htop
     - ~/.config/i3status
     - ~/.config/mako
