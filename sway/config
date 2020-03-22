@@ -66,6 +66,7 @@ for_window [instance="update_installer"] floating enable
 # custom floating
 for_window [app_id="firefox" title="About Mozilla Firefox"] floating enable
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable
+for_window [app_id="firefox" title="Firefox - Sharing Indicator"] floating enable
 for_window [app_id="firefox-developer-edition" title="About Firefox Developer Edition"] floating enable
 for_window [app_id="gnome-calculator"] floating enable
 for_window [app_id="org.gnome.NautilusPreviewer"] floating enable
