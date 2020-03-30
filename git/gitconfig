@@ -13,6 +13,7 @@
 	editor = vim
 	eol = native
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	quotepath = false
 [alias]
 	committree = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ct = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
