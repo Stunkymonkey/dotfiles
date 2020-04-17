@@ -40,7 +40,7 @@ exec telegram-desktop -startintray
 exec /usr/lib/geoclue-2.0/demos/agent
 exec redshift-gtk -m wayland
 exec nextcloud
-exec feedreader --headless
+exec newsflash
 
 # mute microfone
 exec amixer set Capture nocap
@@ -72,7 +72,7 @@ for_window [app_id="gnome-calculator"] floating enable
 for_window [app_id="org.gnome.NautilusPreviewer"] floating enable
 
 # Stick windows to workspaces
-assign [app_id="feedreader"] 8
+assign [app_id="NewsFlashGTK"] 8
 assign [class="Thunderbird"] 9
 assign [app_id="evolution"] 9
 assign [app_id="rhythmbox"] 10
@@ -87,7 +87,7 @@ bindsym Shift+$mod+Tab workspace prev
 bindsym $mod+m exec . ~/.profile.d/90-keychain.sh && keepassxc
 bindsym $mod+e exec subl3
 bindsym $mod+w exec firefox
-bindsym $mod+u exec feedreader
+bindsym $mod+u exec newsflash
 
 # mako
 bindsym $mod+dead_circumflex exec makoctl dismiss
