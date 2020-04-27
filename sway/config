@@ -40,7 +40,7 @@ exec telegram-desktop -startintray
 exec /usr/lib/geoclue-2.0/demos/agent
 exec redshift-gtk -m wayland
 exec nextcloud
-exec newsflash
+exec com.gitlab.newsflash
 
 # mute microfone
 exec amixer set Capture nocap
@@ -87,7 +87,7 @@ bindsym Shift+$mod+Tab workspace prev
 bindsym $mod+m exec . ~/.profile.d/90-keychain.sh && keepassxc
 bindsym $mod+e exec subl3
 bindsym $mod+w exec firefox
-bindsym $mod+u exec newsflash
+bindsym $mod+u exec com.gitlab.newsflash
 
 # mako
 bindsym $mod+dead_circumflex exec makoctl dismiss
