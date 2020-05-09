@@ -1,4 +1,7 @@
-# Enable QT apps to have gtk theme  
+# xdg-desktop-portal-wlr
+XDG_CURRENT_DESKTOP=sway
+
+# Enable QT apps to have gtk theme
 QT_QPA_PLATFORMTHEME=qt5ct
 
 # Force wayland on qt apps
