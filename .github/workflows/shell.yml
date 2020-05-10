@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install dotfiles
       run: |
-        rm ~/.bashrc
+        rm ~/.bashrc ~/.bash_profile
         ./install
