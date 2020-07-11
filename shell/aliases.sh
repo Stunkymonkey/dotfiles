@@ -89,6 +89,7 @@ alias mon-update="xrandr --auto"
 # wayland:
 alias pdfpc="pdfpc --wayland-workaround"
 alias screen-off-wl="swayidle timeout 1 'swaymsg \"output * dpms off\"' resume 'swaymsg \"output * dpms on\"; pkill -n swayidle'"
+alias use-x11="QT_QPA_PLATFORM=xcb"
 
 # DEBIAN:
 alias sag='sudo apt-get'
