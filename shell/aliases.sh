@@ -72,7 +72,7 @@ fi
 alias pwedit="sudo vim -p /etc/{passwd,group,shadow,gshadow}"
 alias cmdlist='find $(echo $PATH | tr ":" "\n") | awk -F / "{print \$NF}" | sort -u'
 alias makepasswd='makepasswd --minchars=10 --maxchars=25 --count=10'
-alias ssh-keygen-save="ssh-keygen -o -a 64 -t ed25519"
+alias ssh-keygen-secure="ssh-keygen -o -a 64 -t ed25519"
 alias shuttle='sshuttle --dns -r uberspace 0/0'
 alias mosh-uberspace="mosh uberspace -p 40201"
 
