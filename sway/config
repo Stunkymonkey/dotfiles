@@ -36,6 +36,7 @@ exec swayidle -w \
 	before-sleep '~/.dotfiles/sway/lock.sh'
 exec mako
 exec sleep 2 && QSyncthingTray
+exec blueman-applet
 exec telegram-desktop -startintray
 exec /usr/lib/geoclue-2.0/demos/agent
 exec redshift-gtk -m wayland
