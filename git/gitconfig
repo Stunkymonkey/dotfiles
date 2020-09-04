@@ -14,6 +14,7 @@
 	eol = native
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	quotepath = false
+	commitGraph = true
 [alias]
 	committree = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ct = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -50,8 +51,6 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
-[credential]
-	helper = /usr/bin/git-credential-gnome-keyring
 [rebase]
 	autosquash = true
 [color "diff"]
@@ -61,3 +60,5 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[gc]
+    writeCommitGraph = true
