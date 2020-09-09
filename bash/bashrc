@@ -2,7 +2,7 @@
 
 shopt -s autocd
 shopt -s checkwinsize
-export HISTFILESIZE=5000
+export HISTFILESIZE=10000
 export HISTCONTROL=ignoreboth
 
 #show colored man-pages
