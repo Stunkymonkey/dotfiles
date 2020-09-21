@@ -7,8 +7,7 @@ case "$1" in
 		$0 yay
 		;;
 	docker)
-		docker container prune --force
-		docker image prune --force
+		docker system prune --force
 		;;
 	pacman)
 		pacman -Sc --noconfirm
