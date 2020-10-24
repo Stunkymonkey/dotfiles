@@ -1,0 +1,60 @@
+[theme]
+name = "plain"
+[theme.overrides]
+separator = ""
+separator_bg = "#0C0C0D"
+good_bg = "#0C0C0D"
+info_bg = "#0C0C0D"
+idle_bg = "#0C0C0D"
+warning_bg = "#0C0C0D"
+critical_bg = "#0C0C0D"
+
+[icons]
+name = "awesome5"
+
+[[block]]
+block = "disk_space"
+path = "/"
+alias = ""
+
+[[block]]
+block = "disk_space"
+path = "/home"
+alias = ""
+
+[[block]]
+block = "networkmanager"
+on_click = "alacritty -e nmtui"
+
+[[block]]
+block = "memory"
+format_mem = "{Mup}%"
+format_swap = "{SUp}%"
+
+[[block]]
+block = "temperature"
+collapsed = false
+format = "{average}°C"
+
+[[block]]
+block = "cpu"
+
+[[block]]
+block = "load"
+format = "{1m}"
+
+[[block]]
+block = "battery"
+format = "{percentage}% {time}"
+
+[[block]]
+block = "sound"
+
+#[[block]]
+#block = "sound"
+#device_kind = "source"
+
+[[block]]
+block = "time"
+interval = 1
+format = "%a %F %T"

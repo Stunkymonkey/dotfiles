@@ -52,6 +52,7 @@
 # graphic
 - link:
     ~/.config/i3status/config: i3/i3status
+    ~/.config/i3status-rust/config.toml: sway/i3status-rust.toml
     ~/.local/bin/lock: sway/lock.sh
     ~/.config/mako/config: mako/config
     ~/.config/redshift.conf: redshift/redshift.conf
