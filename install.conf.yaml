@@ -11,6 +11,7 @@
     - ~/.config/environment.d
     - ~/.config/htop
     - ~/.config/i3status
+    - ~/.config/i3status-rust
     - ~/.config/mako
     - ~/.config/redshift/hooks
     - ~/.config/rofi
