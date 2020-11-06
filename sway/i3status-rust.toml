@@ -48,11 +48,15 @@ block = "battery"
 format = "{percentage}% {time}"
 
 [[block]]
+block = "bluetooth"
+mac = "94:DB:56:79:A5:3C"
+
+[[block]]
 block = "sound"
 
-#[[block]]
-#block = "sound"
-#device_kind = "source"
+[[block]]
+block = "sound"
+device_kind = "source"
 
 [[block]]
 block = "time"
