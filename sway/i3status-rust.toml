@@ -2,7 +2,6 @@
 name = "plain"
 [theme.overrides]
 separator = ""
-separator_bg = "#0C0C0D"
 good_bg = "#0C0C0D"
 info_bg = "#0C0C0D"
 idle_bg = "#0C0C0D"
@@ -21,6 +20,7 @@ alias = ""
 block = "disk_space"
 path = "/home"
 alias = ""
+alert_absolute = true
 
 [[block]]
 block = "networkmanager"
@@ -41,7 +41,6 @@ block = "cpu"
 
 [[block]]
 block = "load"
-format = "{1m}"
 
 [[block]]
 block = "battery"
