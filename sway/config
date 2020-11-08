@@ -26,7 +26,6 @@ output * bg #0C0C0D solid_color
 
 # startup programs
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec nm-applet --indicator
 exec gnome-keyring-daemon --start --components secrets
 exec swayidle -w \
 	timeout 285 'notify-send -a lockscreen -c lock-warn -u critical -t 14900 -i system-lock-screen "Locking Screen" "Will Lock Screen in 15s"' \
@@ -36,7 +35,8 @@ exec swayidle -w \
 	before-sleep '~/.dotfiles/sway/lock.sh'
 exec mako
 exec sleep 2 && QSyncthingTray
-exec blueman-applet
+#exec nm-applet --indicator
+#exec blueman-applet
 exec telegram-desktop -startintray
 exec /usr/lib/geoclue-2.0/demos/agent
 exec redshift-gtk -m wayland
