@@ -25,6 +25,7 @@ alert_absolute = true
 [[block]]
 block = "networkmanager"
 on_click = "alacritty -e nmtui"
+interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
 
 [[block]]
 block = "memory"
@@ -33,7 +34,6 @@ format_swap = "{SUp}%"
 
 [[block]]
 block = "temperature"
-collapsed = false
 format = "{average}°C"
 
 [[block]]
