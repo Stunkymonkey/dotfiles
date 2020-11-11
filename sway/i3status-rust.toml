@@ -24,6 +24,7 @@ alert_absolute = true
 
 [[block]]
 block = "networkmanager"
+device_format = "{icon}{ap}"
 on_click = "alacritty -e nmtui"
 interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
 
