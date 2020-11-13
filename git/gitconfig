@@ -63,7 +63,7 @@
 	new = green bold
 	whitespace = red reverse
 [gc]
-    writeCommitGraph = true
+	writeCommitGraph = true
 [delta]
 	line-numbers = true
 [pull]
