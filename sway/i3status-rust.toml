@@ -62,3 +62,10 @@ device_kind = "source"
 block = "time"
 interval = 1
 format = "%a %F %T"
+
+[[block]]
+block = "custom"
+command = "if pgrep -x \"syncthing\" > /dev/null; then echo '{\"icon\":\"\",\"state\":\"Info\", \"text\": \"\"}'; else echo '{\"icon\":\"\",\"state\":\"Warning\", \"text\": \"\"}'; fi"
+json = true
+on_click = "xdg-open http://localhost:8384"
+interval = 3
