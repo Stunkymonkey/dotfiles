@@ -36,7 +36,7 @@ exec swayidle -w \
 exec mako
 exec syncthing -no-browser
 #exec nm-applet --indicator
-#exec blueman-applet
+exec blueman-applet
 exec telegram-desktop -startintray
 exec /usr/lib/geoclue-2.0/demos/agent
 exec redshift-gtk -m wayland
