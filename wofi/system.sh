@@ -3,7 +3,7 @@
 chosen="$(wofi --dmenu --insensitive <<-END
 [Cancel]
 Logout
-Shutdown
+Poweroff
 Reboot
 Suspend
 Hibernate
