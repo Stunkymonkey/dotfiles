@@ -13,7 +13,7 @@
     - ~/.config/i3status
     - ~/.config/i3status-rust
     - ~/.config/mako
-    - ~/.config/redshift/hooks
+    - ~/.config/gammastep/hooks
     - ~/.config/rofi
     - ~/.config/sway
     - ~/.config/swaylock
@@ -56,8 +56,8 @@
     ~/.config/i3status-rust/config.toml: sway/i3status-rust.toml
     ~/.local/bin/lock: sway/lock.sh
     ~/.config/mako/config: mako/config
-    ~/.config/redshift.conf: redshift/redshift.conf
-    ~/.config/redshift/hooks/hook.sh: redshift/hook.sh
+    ~/.config/gammastep/config.ini: gammastep/gammastep.ini
+    ~/.config/gammastep/hooks/hook.sh: gammastep/hook.sh
     ~/.config/rofi/config.rasi: rofi/config.rasi
     ~/.config/rofi/arc-dark.rasi: rofi/arc-dark.rasi
     ~/.config/rofi/system.sh: rofi/system.sh
