@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 LAST=$(tail -1 ~/.borgbackup.log)
 

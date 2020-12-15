@@ -20,13 +20,13 @@ alias = ""
 block = "disk_space"
 path = "/home"
 alias = ""
-alert_absolute = true
+#alert_absolute = true
 
 [[block]]
 block = "networkmanager"
 device_format = "{icon}{ap}"
 on_click = "alacritty -e nmtui"
-interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
+#interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
 
 [[block]]
 block = "memory"
@@ -54,9 +54,9 @@ mac = "94:DB:56:79:A5:3C"
 [[block]]
 block = "sound"
 
-[[block]]
-block = "sound"
-device_kind = "source"
+#[[block]]
+#block = "sound"
+#device_kind = "source"
 
 [[block]]
 block = "time"

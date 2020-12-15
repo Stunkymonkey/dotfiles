@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 now=$(date +"%Y_%m_%d_%H_%M_%S")
 path="$HOME/Pictures/hour-pics"
 size="1280x720"
