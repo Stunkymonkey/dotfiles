@@ -1,17 +1,14 @@
 # outputs
 
 output * {
-	position 1600,0
-}
-output DP-1 {
-  resolution 1920x1080
+	position 1920,0
 }
 
-set $laptop "LVDS-1"
+set $laptop "eDP-1"
 bindswitch lid:on output $laptop disable
 bindswitch lid:off output $laptop enable
 output $laptop {
-	position 0,180
+	position 0,0
 }
 
 input "2:7:SynPS/2_Synaptics_TouchPad" {
