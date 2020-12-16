@@ -125,8 +125,8 @@ bindsym $mod+Shift+Print exec swaymsg -t get_tree | jq -r '.. | (.nodes? // empt
 
 
 # Sreen brightness controls
-bindsym --locked XF86MonBrightnessUp exec brightnessctl set +5%
-bindsym --locked XF86MonBrightnessDown exec brightnessctl set -5%
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 
 # Pulse Audio controls
 bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
