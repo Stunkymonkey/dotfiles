@@ -13,7 +13,6 @@
     - ~/.config/i3status-rust
     - ~/.config/mako
     - ~/.config/gammastep/hooks
-    - ~/.config/rofi
     - ~/.config/sway
     - ~/.config/swaylock
     - ~/.config/yay
@@ -56,9 +55,6 @@
     ~/.config/mako/config: mako/config
     ~/.config/gammastep/config.ini: gammastep/gammastep.ini
     ~/.config/gammastep/hooks/hook.sh: gammastep/hook.sh
-    ~/.config/rofi/config.rasi: rofi/config.rasi
-    ~/.config/rofi/arc-dark.rasi: rofi/arc-dark.rasi
-    ~/.config/rofi/system.sh: rofi/system.sh
     ~/.config/wofi/config: wofi/config
     ~/.config/wofi/style.css: wofi/style.css
     ~/.config/sway/config: sway/config
@@ -84,7 +80,4 @@
 
 - link:
     ~/.local/bin/diff-so-fancy: git/diff-so-fancy/diff-so-fancy
-
-- shell:
-    - ["cd vim/start/YouCompleteMe && python3 install.py --all"]
 
