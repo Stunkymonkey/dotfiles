@@ -5,5 +5,5 @@ size="1280x720"
 
 mkdir -p "$path"
 #streamer -q -f jpeg -s $size -o "$path"/"$now".jpeg -r 1
-fswebcam --no-banner -r $size -S 10 "$path"/"$now".jpeg
+fswebcam --no-banner -r $size -S 15 "$path"/"$now".jpeg
 exit $?
