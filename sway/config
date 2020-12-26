@@ -146,6 +146,9 @@ bindsym --locked XF86AudioNext exec playerctl next
 bindsym --locked XF86AudioPrev exec playerctl previous
 bindsym --locked XF86AudioStop exec playerctl stop
 
+# show helper for display-management
+bindsym XF86Display exec wdisplays
+
 # main commands
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
