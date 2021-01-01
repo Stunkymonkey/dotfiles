@@ -25,7 +25,6 @@ output * bg #0C0C0D solid_color
 #output * bg wallpaper.png fit
 
 # startup programs
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec gnome-keyring-daemon --start --components secrets
 exec swayidle -w \
 	timeout 285 'notify-send -a lockscreen -c lock-warn -u critical -t 14900 -i system-lock-screen "Locking Screen" "Will Lock Screen in 15s"' \
@@ -38,7 +37,6 @@ exec syncthing -no-browser
 #exec nm-applet --indicator
 exec blueman-applet
 exec telegram-desktop -startintray
-exec /usr/lib/geoclue-2.0/demos/agent
 exec gammastep-indicator
 exec nextcloud --background
 exec com.gitlab.newsflash
@@ -184,16 +182,9 @@ bindsym $mod+g fullscreen global
 # change layouts
 bindsym $mod+b split h
 bindsym $mod+v split v
-bindsym $mod+c layout toggle split
-#bindsym $mod+z layout stacking
-#bindsym $mod+t layout tabbed
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
-# focus the child container
-bindsym $mod+s focus child
-# focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+BackSpace floating toggle
 
 bindsym Alt+Left	move workspace to output left
 bindsym Alt+Right	move workspace to output right
