@@ -40,7 +40,7 @@ exec blueman-applet
 exec telegram-desktop -startintray
 exec /usr/lib/geoclue-2.0/demos/agent
 exec gammastep-indicator
-exec nextcloud
+exec nextcloud --background
 exec com.gitlab.newsflash
 
 # mute microfone
