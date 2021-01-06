@@ -36,9 +36,10 @@
     ~/.profile.d/20-cd.sh: shell/cd.sh
     ~/.profile.d/40-extract.sh: shell/extract.sh
     ~/.profile.d/40-mysqlpw.sh: shell/mysqlpw.sh
-    ~/.profile.d/90-keychain.sh: shell/keychain.sh
     ~/.profile.d/80-command-not-found.sh: shell/command-not-found.sh
     ~/.profile.d/81-fzf.sh: shell/fzf.sh
+    ~/.profile.d/82-direnv.sh: shell/direnv.sh
+    ~/.profile.d/90-keychain.sh: shell/keychain.sh
     ~/.tmux.conf: tmux/tmux.conf
     ~/.toprc: top/toprc
     ~/.config/htop/htoprc: top/htoprc
