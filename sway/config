@@ -160,9 +160,9 @@ bindsym $mod+y exec ~/.dotfiles/sway/lock.sh
 bindsym Scroll_Lock exec ~/.dotfiles/sway/lock.sh
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec wofi --show drun
+bindsym $mod+d exec wofi --insensitive --show drun
 bindsym $mod+Shift+d exec ~/.dotfiles/wofi/system.sh
-bindsym Alt+Space exec wofi --show drun
+bindsym Alt+Space exec wofi --insensitive --show drun
 
 # gtk3
 set $gnome-schema org.gnome.desktop.interface
