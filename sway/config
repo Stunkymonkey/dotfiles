@@ -65,7 +65,7 @@ for_window [window_type="menu"] floating enable
 for_window [instance="update_installer"] floating enable
 # custom floating
 for_window [app_id="firefox" title="About Mozilla Firefox"] floating enable
-for_window [app_id="firefox" title="Picture-in-Picture"] floating enable
+for_window [app_id="firefox" title="Picture-in-Picture"] floating enable, sticky enable
 for_window [app_id="firefox" title="Firefox — Sharing Indicator"] floating enable
 for_window [app_id="firefox-developer-edition" title="About Firefox Developer Edition"] floating enable
 for_window [app_id="gnome-calculator"] floating enable
@@ -117,11 +117,9 @@ bindsym Print exec grim ~/Downloads/Screenshot-$(date +'%Y-%m-%d_%H%M%S.png')
 bindsym $mod+Print exec slurp | grim -g - ~/Downloads/Screenshot-$(date +'%Y-%m-%d_%H%M%S.png')
 bindsym $mod+Shift+Print exec swaymsg -t get_tree | jq -r '.. | (.nodes? // empty , .floating_nodes? // empty)[] | select(.focused) | "\(.rect.x),\(.rect.y) \(.rect.width)x\(.rect.height)"' | grim -g - ~/Downloads/Screenshot-$(date +'%Y-%m-%d_%H%M%S.png')
 
-
 # forward an backward at arrow-keys
 #bindsym --release XF86Back exec 
 #bindsym --release XF86Forward exec 
-
 
 # Sreen brightness controls
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
