@@ -35,7 +35,7 @@ format_swap = "{SUp}%"
 
 [[block]]
 block = "temperature"
-format = "{average}°C"
+format = "{max}°C"
 
 [[block]]
 block = "cpu"
