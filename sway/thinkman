@@ -11,7 +11,7 @@ output $laptop {
 	position 0,0
 }
 
-input "2:7:SynPS/2_Synaptics_TouchPad" {
+input type:touchpad {
 	dwt enabled
 	tap enabled
 	natural_scroll enabled
