@@ -24,7 +24,11 @@ seat * hide_cursor 10000
 output * bg #0C0C0D solid_color
 #output * bg wallpaper.png fit
 
+# source env-vars
+exec systemctl --user import-environment
+
 # startup programs
+exec /run/current-system/sw/libexec/polkit-gnome-authentication-agent-1
 exec gnome-keyring-daemon --start --components secrets
 exec swayidle -w \
 	timeout 285 'notify-send -a lockscreen -c lock-warn -u critical -t 14900 -i system-lock-screen "Locking Screen" "Will Lock Screen in 15s"' \
