@@ -1,5 +1,6 @@
 # xdg-desktop-portal-wlr
 XDG_CURRENT_DESKTOP=sway
+XDG_SESSION_TYPE=wayland
 
 # Enable QT apps to have gtk theme
 QT_QPA_PLATFORMTHEME=qt5ct
