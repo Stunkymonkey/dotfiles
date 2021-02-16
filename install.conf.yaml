@@ -28,6 +28,7 @@
     ~/.liquidprompt: bash/liquidprompt
     ~/.gitconfig: git/gitconfig
     ~/.profile.d/load: shell/load
+    ~/.profile.d/09-nixos-commited.sh: shell/nixos-commited.sh
     ~/.profile.d/10-vars.sh: shell/vars.sh
     ~/.profile.d/10-paths.sh: shell/paths.sh
     ~/.profile.d/10-gitrepo-commited.sh: shell/gitrepo-commited.sh
