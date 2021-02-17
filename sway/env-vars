@@ -1,6 +1,9 @@
-# xdg-desktop-portal-wlr
-XDG_CURRENT_DESKTOP=sway
-XDG_SESSION_TYPE=wayland
+# firefox
+MOZ_ENABLE_WAYLAND=1
+MOZ_USE_XINPUT2=1
+
+# clutter
+CLUTTER_BACKEND=wayland
 
 # Enable QT apps to have gtk theme
 QT_QPA_PLATFORMTHEME=qt5ct
@@ -10,18 +13,15 @@ QT_QPA_PLATFORM=wayland
 QT_WAYLAND_FORCE_DPI=96  
 QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 
-# clutter
-CLUTTER_BACKEND=wayland
+# libre office
+SAL_USE_VCLPLUGIN=gtk3
 
 # sdl2
 SDL_VIDEODRIVER=wayland
 
-# libre office
-SAL_USE_VCLPLUGIN=gtk3
-
-# firefox
-MOZ_ENABLE_WAYLAND=1
-MOZ_USE_XINPUT2=1
+# xdg-desktop-portal-wlr
+XDG_CURRENT_DESKTOP=sway
+XDG_SESSION_TYPE=wayland
 
 # java
 _JAVA_AWT_WM_NONREPARENTING=1

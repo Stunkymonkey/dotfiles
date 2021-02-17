@@ -62,7 +62,7 @@
     ~/.config/sway/config: sway/config
     ~/.config/sway/thinkman: sway/thinkman
     ~/.config/swaylock/config: sway/lock
-    ~/.config/environment.d/sway.conf: sway/env
+    ~/.config/environment.d/sway.conf: sway/env-vars
 
 
 # scripts
