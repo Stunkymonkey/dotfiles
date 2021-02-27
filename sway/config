@@ -77,7 +77,7 @@ for_window [app_id="org.gnome.NautilusPreviewer"] floating enable
 
 # Stick windows to workspaces
 assign [app_id="NewsFlashGTK"] 8
-assign [class="Thunderbird"] 9
+assign [app_id="thunderbird"] 9
 assign [app_id="evolution"] 9
 assign [app_id="rhythmbox"] 10
 assign [app_id="lollypop"] 10
