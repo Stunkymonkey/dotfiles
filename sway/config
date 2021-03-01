@@ -148,6 +148,9 @@ bindsym --locked XF86AudioStop exec playerctl stop
 
 # show helper for display-management
 bindsym XF86Display exec wdisplays
+#bindsym XF86NotificationCenter exec swaynag -t warning -m 'notificationcenter'
+#bindsym XF86PickupPhone exec swaynag -t warning -m 'pickupphone'
+#bindsym XF86HangupPhone exec swaynag -t warning -m 'hangupphone'
 
 # main commands
 bindsym $mod+Shift+c reload
