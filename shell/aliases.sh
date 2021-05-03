@@ -100,6 +100,9 @@ alias key-repair-all='wget -q http://archive.getdeb.net/getdeb-archive.key -O- |
 alias pacman-update='sudo pacman -Syu'
 alias aur-update='yay -Syua'
 
+# NIX:
+alias nix-env-pwd-install='nix-env -f . -iA'
+
 # DOTFILES:
 alias dotfile-update-submodules='cd ~/.dotfiles/ && git submodule foreach git pull origin master'
 
