@@ -55,6 +55,7 @@ for_window [class="vlc"] inhibit_idle fullscreen
 for_window [app_id="evince"] inhibit_idle fullscreen
 for_window [class="mpv"] inhibit_idle fullscreen
 for_window [class="Skype"] inhibit_idle fullscreen
+for_window [class="discord"] inhibit_idle fullscreen
 
 # font
 font pango:Fira Sans Mono 12
