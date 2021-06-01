@@ -1,12 +1,12 @@
 [theme]
 name = "plain"
 [theme.overrides]
-separator = ""
 good_bg = "#0C0C0D"
 info_bg = "#0C0C0D"
 idle_bg = "#0C0C0D"
 warning_bg = "#0C0C0D"
 critical_bg = "#0C0C0D"
+separator_bg = "#0C0C0D"
 
 [icons]
 name = "awesome5"
@@ -14,12 +14,12 @@ name = "awesome5"
 [[block]]
 block = "disk_space"
 path = "/"
-alias = ""
+format = "{available}"
 
 [[block]]
 block = "disk_space"
 path = "/home"
-alias = ""
+format = "{available}"
 alert_absolute = true
 
 [[block]]
@@ -30,12 +30,12 @@ interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
 
 [[block]]
 block = "memory"
-format_mem = "{Mup}%"
-format_swap = "{SUp}%"
+format_mem = "{mem_used_percents}"
+format_swap = "{swap_used_percents}"
 
 [[block]]
 block = "temperature"
-format = "{max}°C"
+format = "{max}"
 
 [[block]]
 block = "cpu"
@@ -45,7 +45,7 @@ block = "load"
 
 [[block]]
 block = "battery"
-format = "{percentage}% {time}"
+format = "{percentage} {time}"
 
 [[block]]
 block = "bluetooth"
