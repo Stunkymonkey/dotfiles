@@ -49,6 +49,8 @@ format = "{percentage} {time}"
 
 [[block]]
 block = "bluetooth"
+format = "{label}"
+format_unavailable = "{label}"
 mac = "94:DB:56:79:A5:3C"
 
 [[block]]
