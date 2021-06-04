@@ -1,5 +1,6 @@
-[theme]
-name = "plain"
+icons = "awesome5"
+scrolling = "natural"
+
 [theme.overrides]
 good_bg = "#0C0C0D"
 info_bg = "#0C0C0D"
@@ -7,9 +8,6 @@ idle_bg = "#0C0C0D"
 warning_bg = "#0C0C0D"
 critical_bg = "#0C0C0D"
 separator_bg = "#0C0C0D"
-
-[icons]
-name = "awesome5"
 
 [[block]]
 block = "disk_space"
