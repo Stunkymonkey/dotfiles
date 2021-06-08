@@ -3,7 +3,6 @@
 #alias definitions
 alias cd..="cd .."
 alias gits="git status"
-alias subl='sublime3'
 
 alias les="less"
 
