@@ -8,6 +8,7 @@ idle_bg = "#0C0C0D"
 warning_bg = "#0C0C0D"
 critical_bg = "#0C0C0D"
 separator_bg = "#0C0C0D"
+separator = ""
 
 [[block]]
 block = "disk_space"
