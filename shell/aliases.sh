@@ -19,8 +19,8 @@ alias cp='cp -v'
 alias mv='mv -v'
 
 alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s"'
-alias yta='youtube-dl -o "%(title)s.%(ext)s" --extract-audio'
-alias yt3='youtube-dl -o "%(title)s.%(ext)s" --extract-audio --audio-format mp3'
+alias youtube-audio='youtube-dl -o "%(title)s.%(ext)s" --extract-audio'
+alias youtube-mp3='youtube-dl -o "%(title)s.%(ext)s" --extract-audio --audio-format mp3'
 alias music-gain="find ~/Music -iname '*.mp3' -execdir mp3gain -q -k -p {} \+"
 alias music-fix="find ~/Music -print0 | xargs -P 0 -0 nice -n 19 mp3val -f"
 
