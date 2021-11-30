@@ -15,9 +15,6 @@ alias :qw="exit"
 alias vim="vim -p"
 alias vi="vim -p"
 
-alias cp='cp -v'
-alias mv='mv -v'
-
 alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s"'
 alias youtube-audio='youtube-dl -o "%(title)s.%(ext)s" --extract-audio'
 alias youtube-mp3='youtube-dl -o "%(title)s.%(ext)s" --extract-audio --audio-format mp3'
@@ -75,8 +72,6 @@ alias ssh-keygen-secure="ssh-keygen -o -a 64 -t ed25519"
 alias shuttle='sshuttle --dns -r uberspace 0/0'
 alias mosh-uberspace="mosh uberspace -p 40201"
 
-alias backup='vdirsyncer sync && sudo borgmatic --prune --stats --no-color && sudo borgmatic --create --progress --stats --no-color && echo $(date +"%Y%m%d") > ~/.borgbackup.log'
-
 alias vnc-temp='x11vnc -display :0 -nap -wait 50 -noxdamage -forever -rfbauth ~/.vnc/passwd -speeds 50,1,1'
 
 alias notify='notify-send Terminal "Process has been finished"'
@@ -121,20 +116,6 @@ dpms(){
 	xset s off
 	xset dpms "${secs}" "${secs}" "${secs}"
 }
-
-# scan your local network with nmap
-#
-# usage:
-#  snet <nmap-args>
-# example: (scan for every HP printer in the network)
-#  snet -p jetdirect --open
-#
-# - get all non-linklocal IP addrs from ip
-# - pipe the IPs through ipcalc to get the network ID
-#   - this is neccessary to prevent scanning the same network twice
-#   - likely to experience if connected via wifi and ethernet
-# - xargs it to nmap at the end
-alias snet="ip addr | \\grep -v "inet6" | \\grep inet | cut -d \" \" -f 6 | \\grep -v '127\\.0\\.[0-1]\\.[0-1]' | xargs -n 1 ipcalc | awk '/Network:/{print \$2}' | sort -u | xargs nmap"
 
 for INTERFACE in $(ls /sys/class/net); do
 	alias ping-all-$INTERFACE="ping -6 ff02::1%$INTERFACE"
