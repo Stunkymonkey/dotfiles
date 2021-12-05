@@ -68,7 +68,6 @@
 # scripts
 - link:
     ~/.local/bin/host-is-on: bin/host-is-on.sh
-    ~/.local/bin/mdo: bin/mdo.sh
     ~/.local/bin/git-authors: bin/git-authors.sh
     ~/.local/bin/clean: bin/clean.sh
 
