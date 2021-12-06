@@ -15,7 +15,7 @@ alias :qw="exit"
 alias vim="vim -p"
 alias vi="vim -p"
 
-alias yt-dl='yt-dlp -o "%(title)s.%(ext)s"'
+alias yt-dlp='yt-dlp -o "%(title)s.%(ext)s"'
 alias yt-audio='yt-dlp -o "%(title)s.%(ext)s" --extract-audio'
 alias yt-mp3='yt-dlp -o "%(title)s.%(ext)s" --extract-audio --audio-format mp3'
 alias music-gain="find ~/Music -iname '*.mp3' -execdir mp3gain -q -k -p {} \+"
@@ -78,7 +78,7 @@ alias notify='notify-send Terminal "Process has been finished"'
 
 # xorg
 alias screen-off-x='xset -display :0.0 dpms force off'
-alias mon-update="xrandr --auto"
+alias screen-update-x="xrandr --auto"
 
 # wayland:
 alias pdfpc="pdfpc --wayland-workaround"
@@ -109,13 +109,6 @@ alias esp32-terminal="screen /dev/ttyUSB? 115200"
 alias ttime_green="sh -c \"sleep 180 && notify-send -u critical 'The tea is ready'\" &"
 alias ttime_black="sh -c \"sleep 300 && notify-send -u critical 'The tea is ready'\" &"
 
-# set DPMS values in minutes
-dpms(){
-	[ -z "${1}" ] && echo "No time given!" && return 1
-	local secs=`expr "60" "*" "${1}"`
-	xset s off
-	xset dpms "${secs}" "${secs}" "${secs}"
-}
 # IPv6 ping
 for INTERFACE in /sys/class/net/*; do
 	[ -e "$INTERFACE" ] || break # incase it is empty
