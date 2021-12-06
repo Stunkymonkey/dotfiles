@@ -2,6 +2,7 @@
 
 for profile in ~/.profile.d/*.sh; do
 	if [ -x "$profile" ]; then
-		source $profile
+		# shellcheck source=/dev/null
+		. "$profile"
 	fi
 done

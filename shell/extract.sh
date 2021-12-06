@@ -1,55 +1,55 @@
 #!/bin/sh
 
 x() {
-	for zipfile in $*; do
-		local extractor
+	for zipfile in "$@"; do
+		_x_extractor
 		if [ -f "$zipfile" ]; then
 			case "$zipfile" in
 				*.deb)
-					extractor="ar x" ;;
+					_x_extractor="ar x" ;;
 				*.tar.lrz)
-					extractor="lrztar -d" ;;
+					_x_extractor="lrztar -d" ;;
 				*.lrz)
-					extractor="lrunzip" ;;
+					_x_extractor="lrunzip" ;;
 				*.tar.bz2)
-					extractor="bsdtar xjf" ;;
+					_x_extractor="bsdtar xjf" ;;
 				*.bz2)
-					extractor="bunzip2" ;;
+					_x_extractor="bunzip2" ;;
 				*.tar.gz)
-					extractor="bsdtar xzf" ;;
+					_x_extractor="bsdtar xzf" ;;
 				*.gz)
-					extractor="gunzip" ;;
+					_x_extractor="gunzip" ;;
 				*.tar.xz)
-					extractor="bsdtar Jxf" ;;
+					_x_extractor="bsdtar Jxf" ;;
 				*.xz)
-					extractor="xz -d" ;;
+					_x_extractor="xz -d" ;;
 				*.rar)
-					extractor="unrar e" ;;
+					_x_extractor="unrar e" ;;
 				*.tar)
-					extractor="bsdtar xf" ;;
+					_x_extractor="bsdtar xf" ;;
 				*.tbz2)
-					extractor="bsdtar xjf" ;;
+					_x_extractor="bsdtar xjf" ;;
 				*.tgz)
-					extractor="bsdtar xzf" ;;
+					_x_extractor="bsdtar xzf" ;;
 				*.zip)
-					extractor="unzip" ;;
+					_x_extractor="unzip" ;;
 				*.Z)
-					extractor="uncompress" ;;
+					_x_extractor="uncompress" ;;
 				*.7z)
-					extractor="7z x" ;;
+					_x_extractor="7z x" ;;
 				*)
 					echo "Cannot extract '$zipfile': No extractor for filetype known ..." >&2
 					return 1
 					;;
 			esac
 
-			if ! command -v `echo $extractor | awk '{print $1}'` >/dev/null 2>/dev/null; then
-				echo "Cannot extract '$zipfile': Cannot find extractor '`echo $extractor | awk '{print $1}'`'." >&2
+			if ! command -v "$(echo "$_x_extractor" | awk '{print $1}')" >/dev/null 2>/dev/null; then
+				echo "Cannot extract '$zipfile': Cannot find extractor '$(echo "$_x_extractor" | awk '{print $1}')'." >&2
 				return 1
 			fi
 
 			echo "Extracting '$zipfile'..." >&2
-			eval $extractor $zipfile
+			eval "$_x_extractor" "$zipfile"
 
 		elif [ ! -e "$zipfile" ]; then
 			echo "Cannot extract '$zipfile': File does not exist!"

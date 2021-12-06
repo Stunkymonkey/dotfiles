@@ -34,13 +34,13 @@ alias of="xdg-open"
 # io <processname>
 io(){
 	local sudo_needed
-	[ ! -z "$(type sudo 2>/dev/null)" -a "$USER" != 'root' ] \
+	[ -n "$(type sudo 2>/dev/null)" ] && [ "$USER" != 'root' ] \
 		&& sudo_needed="sudo"
 
-	${sudo_needed} iotop -p$(pidof "$1" | sed 's/ / -p/g')
+	${sudo_needed} iotop -p"$(pidof "$1" | sed 's/ / -p/g')"
 }
 
-if [ ! -z "$(type sudo 2>/dev/null)" -a "$USER" != 'root' ]; then
+if [ -n "$(type sudo 2>/dev/null)" ] && [ "$USER" != 'root' ]; then
 	#create sudo aliases WITHOUT leading s
 	for sudo in fwupdmgr mount umount iftop iotop fsadm lvchange lvconvert lvcreate lvdisplay lvextend lvm lvmchange lvmconf lvmconfig lvmdiskscan lvmdump lvmetad lvmsadc lvmsar lvreduce lvremove lvrename lvresize lvs lvscan pvchange pvck pvcreate pvdisplay pvmove pvremove pvresize pvs pvscan vgcfgbackup vgcfgrestore vgchange vgck vgconvert vgcreate vgdisplay vgexport vgextend vgimport vgimportclone vgmerge vgmknodes vgreduce vgremove vgrename vgs vgscan vgsplit;
 	do
@@ -61,7 +61,7 @@ if [ ! -z "$(type sudo 2>/dev/null)" -a "$USER" != 'root' ]; then
 		# which should indicate in most times if we need sudo
 		echo "$*" | grep -- "-[SRU]" >/dev/null 2>&1 \
 			&& sudo_needed="sudo"
-		${sudo_needed} /usr/bin/pacman $*
+		${sudo_needed} /usr/bin/pacman "$@"
 	}
 fi
 
@@ -116,8 +116,10 @@ dpms(){
 	xset s off
 	xset dpms "${secs}" "${secs}" "${secs}"
 }
-
-for INTERFACE in $(ls /sys/class/net); do
+# IPv6 ping
+for INTERFACE in /sys/class/net/*; do
+	[ -e "$INTERFACE" ] || break # incase it is empty
+	INTERFACE=$(basename "$INTERFACE")
 	alias ping-all-$INTERFACE="ping -6 ff02::1%$INTERFACE"
 	alias ping-routes-$INTERFACE="ping -6 ff02::2%$INTERFACE"
 done
