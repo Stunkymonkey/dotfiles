@@ -8,16 +8,16 @@ case "$1" in
 		$0 yay
 		;;
 	docker)
-		docker system prune --force
+		docker system prune --force 2>/dev/null
 		;;
   nix)
-    nix-collect-garbage --delete-old
+    nix-collect-garbage --delete-old 2>/dev/null
 		;;
 	pacman)
-		pacman -Sc --noconfirm
+		pacman -Sc --noconfirm 2>/dev/null
 		;;
 	yay)
-	  yay -Sacc --noconfirm
+	  yay -Sacc --noconfirm 2>/dev/null
     ;;
 	*)
 		echo "Please give parameter of: [all docker nix pacman yay]"
