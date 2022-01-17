@@ -44,6 +44,7 @@ exec telegram-desktop -startintray
 exec gammastep-indicator
 exec nextcloud --background
 exec com.gitlab.newsflash
+exec element-desktop --hidden
 
 # mute microfone
 exec amixer set Capture nocap
