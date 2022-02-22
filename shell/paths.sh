@@ -12,7 +12,7 @@ appendpath () {
     esac
 }
 
-appendpath ~/.local/bin/
+appendpath ~/.local/bin
 appendpath ~/.bin
 
 if which ruby >/dev/null 2>&1 && which gem >/dev/null 2>&1; then
