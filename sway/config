@@ -170,9 +170,10 @@ bindsym $mod+y exec ~/.dotfiles/sway/lock.sh
 bindsym Scroll_Lock exec ~/.dotfiles/sway/lock.sh
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec wofi --insensitive --show drun
+set $menu wofi --insensitive --show drun | sed s/%[a-zA-Z]// | xargs swaymsg exec --
+bindsym $mod+d exec $menu
 bindsym $mod+Shift+d exec ~/.dotfiles/wofi/system.sh
-bindsym Alt+Space exec wofi --insensitive --show drun
+bindsym Alt+Space exec $menu
 
 # gtk3
 set $gnome-schema org.gnome.desktop.interface

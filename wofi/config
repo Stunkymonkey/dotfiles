@@ -1,5 +1,6 @@
 mode=run
+drun-print_command=true
 colors=colors
-filter_rate=100
 allow_images=true
 allow_markup=true
+gtk_dark=true
