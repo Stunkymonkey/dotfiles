@@ -18,6 +18,7 @@
     - ~/.config/yay
     - ~/.config/wofi
     - ~/.vim/pack/dotfiles
+    - ~/.vim/colors
 
 # casual
 - link:
@@ -46,6 +47,7 @@
     ~/.config/htop/htoprc: top/htoprc
     ~/.vimrc: vim/vimrc
     ~/.vim/pack/dotfiles/start: vim/start
+    ~/.vim/colors/badwolf.vim: vim/start/badwolf/colors/badwolf.vim
     ~/.wgetrc: wget/wgetrc
     ~/.config/yay/config.json: yay/config.json
     ~/.Xresources: i3/Xresources
