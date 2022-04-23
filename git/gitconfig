@@ -68,3 +68,5 @@
 	line-numbers = true
 [pull]
 	rebase = false
+[safe]
+	directory = /etc/nixos
