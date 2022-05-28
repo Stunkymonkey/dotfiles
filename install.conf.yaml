@@ -9,6 +9,7 @@
     - ~/.local/bin
     - ~/.config/alacritty
     - ~/.config/environment.d
+    - ~/.config/foot
     - ~/.config/htop
     - ~/.config/i3status-rust
     - ~/.config/mako
@@ -27,6 +28,7 @@
     ~/.bash_profile: bash/bashrc
     ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
     ~/.liquidprompt: bash/liquidprompt
+    ~/.config/foot/foot.ini: foot/foot.ini
     ~/.gitconfig: git/gitconfig
     ~/.profile.d/load: shell/load
     ~/.profile.d/09-nixos-commited.sh: shell/nixos-commited.sh
