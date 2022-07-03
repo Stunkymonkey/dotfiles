@@ -306,7 +306,7 @@ client.focused_inactive	$color_bg_inactive	$color_bg_inactive	$color_text_inacti
 client.urgent			$color_bg_urgent	$color_bg_urgent	$color_text				$color_indicator	$color_bg
 
 bar {
-	font pango:FiraCode, Font Awesome 5 Free
+	font pango:FiraCode, Font Awesome 6 Free
 	status_command i3status-rs
 	position top
 	workspace_buttons yes
