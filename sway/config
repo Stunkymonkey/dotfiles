@@ -76,6 +76,7 @@ for_window [app_id="firefox" title="Firefox — Sharing Indicator"] floating ena
 for_window [app_id="firefox-developer-edition" title="About Firefox Developer Edition"] floating enable
 for_window [app_id="gnome-calculator"] floating enable
 for_window [app_id="org.gnome.NautilusPreviewer"] floating enable
+for_window [app_id="com.nextcloud.desktopclient.nextcloud"] floating enable
 
 # Stick windows to workspaces
 assign [app_id="NewsFlashGTK"] 8
