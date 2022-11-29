@@ -96,6 +96,7 @@ alias aur-update='yay -Syua'
 
 # NIX:
 alias nix-env-pwd-install='nix-env -f . -iA'
+alias nix-list-results='ls -l /nix/var/nix/gcroots/auto/'
 
 # DOTFILES:
 alias dotfile-update-submodules='cd ~/.dotfiles/ && git submodule foreach git pull origin master'
