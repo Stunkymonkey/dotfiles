@@ -95,8 +95,8 @@ alias pacman-update='sudo pacman -Syu'
 alias aur-update='yay -Syua'
 
 # NIX:
-alias nix-env-pwd-install='nix-env -f . -iA'
 alias nix-list-results='ls -l /nix/var/nix/gcroots/auto/'
+alias nixpkgs-build='nix-build . -A'
 
 # DOTFILES:
 alias dotfile-update-submodules='cd ~/.dotfiles/ && git submodule foreach git pull origin master'
