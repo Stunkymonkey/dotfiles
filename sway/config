@@ -182,6 +182,7 @@ exec_always {
     gsettings set $gnome-schema gtk-theme 'Arc-Dark'
     gsettings set $gnome-schema icon-theme 'Numix-Circle'
     gsettings set $gnome-schema cursor-theme 'Adwaita'
+    gsettings set $gnome-schema color-scheme 'prefer-dark'
 }
 
 # kill focused window
