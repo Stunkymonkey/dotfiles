@@ -1,15 +1,26 @@
 # outputs
 
+
+set $laptop eDP-1
+
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+
 output * {
 	position 1920,0
 }
+output DP-* {
+  resolution 1920x1080
+}
 
-set $laptop "eDP-1"
-bindswitch lid:on output $laptop disable
-bindswitch lid:off output $laptop enable
+output DP-4 {
+	position 3840,0
+}
+
 output $laptop {
 	position 0,0
 }
+
 
 input type:touchpad {
 	dwt enabled
