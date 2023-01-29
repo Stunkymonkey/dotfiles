@@ -14,17 +14,19 @@ separator = ""
 block = "disk_space"
 path = "/"
 format = "{available}"
+#update = true
 
 [[block]]
 block = "disk_space"
 path = "/home"
 format = "{available}"
+#update = true
 alert_absolute = true
 
 [[block]]
 block = "networkmanager"
 device_format = "{icon}{ap}"
-on_click = "alacritty -e nmtui"
+on_click = "foot nmtui"
 interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
 
 [[block]]
