@@ -38,13 +38,13 @@ exec swayidle -w \
 	before-sleep '~/.dotfiles/sway/lock.sh'
 exec mako
 exec syncthing -no-browser
-#exec nm-applet --indicator
 exec blueman-applet
 exec telegram-desktop -startintray
 exec gammastep-indicator
 exec nextcloud --background
 exec com.gitlab.newsflash
-exec element-desktop --hidden
+# workaround for https://github.com/vector-im/element-web/issues/18801
+exec sleep 3 && element-desktop --hidden
 
 # mute microfone
 exec amixer set Capture nocap
