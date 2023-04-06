@@ -18,6 +18,8 @@
     - ~/.config/swaylock
     - ~/.config/yay
     - ~/.config/wofi
+    - ~/.config/Code/User
+    - ~/.config/VSCodium/User
     - ~/.vim/pack/dotfiles
     - ~/.vim/colors
 
@@ -66,7 +68,8 @@
     ~/.config/sway/thinkman: sway/thinkman
     ~/.config/swaylock/config: sway/lock
     ~/.config/environment.d/sway.conf: sway/env-vars
-
+    ~/.config/Code/User/settings.json: vscodium/settings.json
+    ~/.config/VSCodium/User/settings.json: vscodium/settings.json
 
 # scripts
 - link:

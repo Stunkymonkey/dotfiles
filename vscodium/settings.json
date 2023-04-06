@@ -1,0 +1,18 @@
+{
+    "editor.fontFamily": "'Fira Code'",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false,
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+    "editor.fontLigatures": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.startupEditor": "none",
+    "git.autofetch": true,
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.guides.bracketPairs": "active"
+}
