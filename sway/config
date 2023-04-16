@@ -93,7 +93,7 @@ bindsym $mod+Tab workspace next
 bindsym Shift+$mod+Tab workspace prev
 
 bindsym $mod+m exec . ~/.profile.d/90-keychain.sh && keepassxc
-bindsym $mod+e exec sublime
+bindsym $mod+e exec . ~/.profile.d/90-keychain.sh && codium
 bindsym $mod+w exec firefox
 bindsym $mod+u exec com.gitlab.newsflash
 
