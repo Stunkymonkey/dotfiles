@@ -22,10 +22,6 @@
 [submodule "vim/start/nerdcommenter"]
 	path = vim/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/start/YouCompleteMe"]
-	path = vim/start/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe.git
-	ignore = dirty
 [submodule "vim/start/vim-surround"]
 	path = vim/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
