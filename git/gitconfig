@@ -38,6 +38,7 @@
 	fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*
 [diff]
 	tool = vimdiff
+	colormoved = default
 [difftool]
 	prompt = false
 [color.blame]
@@ -66,6 +67,8 @@
 	writeCommitGraph = true
 [delta]
 	line-numbers = true
+	navigate = true
+	light = false
 [pull]
 	ff = only
 [url "ssh://git@github.com/"]
