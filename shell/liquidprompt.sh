@@ -4,6 +4,8 @@ if [ -z "${IN_NIX_SHELL}" ]; then
 	# shellcheck disable=SC2034  # Unused variables left for readability
 	LP_ENABLE_TITLE=1
 	# shellcheck disable=SC2034  # Unused variables left for readability
+	LP_ENABLE_SCREEN_TITLE=1
+	# shellcheck disable=SC2034  # Unused variables left for readability
 	LP_ENABLE_SSH_COLORS=1
 	# shellcheck disable=SC2034  # Unused variables left for readability
 	LP_ENABLE_VCS_ROOT=1
