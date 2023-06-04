@@ -1,5 +1,6 @@
-icons = "awesome5"
 scrolling = "natural"
+[icons]
+icons = "awesome5"
 
 [theme.overrides]
 good_bg = "#0C0C0D"
@@ -8,51 +9,58 @@ idle_bg = "#0C0C0D"
 warning_bg = "#0C0C0D"
 critical_bg = "#0C0C0D"
 separator_bg = "#0C0C0D"
-separator = ""
+separator = " "
 
 [[block]]
 block = "disk_space"
 path = "/"
-format = "{available}"
-#update = true
+format = "  $available "
+[[block.click]]
+button = "right"
+update = true
 
 [[block]]
 block = "disk_space"
 path = "/home"
-format = "{available}"
-#update = true
-alert_absolute = true
+format = "  $available "
+[[block.click]]
+button = "right"
+update = true
 
 [[block]]
-block = "networkmanager"
-device_format = "{icon}{ap}"
-on_click = "foot nmtui"
-interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
+block = "net"
+format = " $icon {$ssid |}"
+[[block.click]]
+button = "left"
+cmd = "foot nmtui"
 
 [[block]]
 block = "memory"
-format_mem = "{mem_used_percents}"
-format_swap = "{swap_used_percents}"
+format = " $icon $mem_used_percents.eng(w:1) "
+format_alt = " $icon_swap $swap_used_percents.eng(w:1) "
 
 [[block]]
 block = "temperature"
-format = "{max}"
+format = " $icon $max "
+format_alt = " $icon $min min, $max max, $average avg "
 
 [[block]]
 block = "cpu"
+interval = 1
 
 [[block]]
 block = "load"
 
 [[block]]
 block = "battery"
-format = "{percentage} {time}"
+full_threshold = 99  # so the format is used when discharging
+format = " $icon $percentage {$time |}"
 
 [[block]]
 block = "bluetooth"
-format = "{label}"
-format_unavailable = "{label}"
 mac = "94:DB:56:79:A5:3C"
+format = " $icon {$percentage |}"
+disconnected_format = " $icon "
 
 [[block]]
 block = "sound"
@@ -64,11 +72,15 @@ device_kind = "source"
 [[block]]
 block = "time"
 interval = 1
-format = "%a %F %T"
+[block.format]
+full = " $icon $timestamp.datetime(f:'%a %F %T', l:de_DE) "
+short = " $icon $timestamp.datetime(f:%R) "
 
 [[block]]
 block = "custom"
 command = "if pgrep -x \"syncthing\" > /dev/null; then echo '{\"icon\":\"\",\"state\":\"Info\", \"text\": \"\"}'; else echo '{\"icon\":\"\",\"state\":\"Warning\", \"text\": \"\"}'; fi"
 json = true
-on_click = "xdg-open http://localhost:8384"
 interval = 3
+[[block.click]]
+button = "left"
+cmd = "xdg-open http://localhost:8384"
