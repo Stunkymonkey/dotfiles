@@ -14,5 +14,6 @@
     "extensions.autoCheckUpdates": false,
     "extensions.autoUpdate": false,
     "explorer.confirmDragAndDrop": false,
-    "editor.guides.bracketPairs": "active"
+    "editor.guides.bracketPairs": "active",
+    "window.commandCenter": true
 }
