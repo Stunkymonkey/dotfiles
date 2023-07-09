@@ -71,6 +71,7 @@ alias makepasswd='makepasswd --minchars=10 --maxchars=25 --count=10'
 alias ssh-keygen-secure="ssh-keygen -o -a 64 -t ed25519"
 alias shuttle='sshuttle --dns -r uberspace 0/0'
 alias mosh-uberspace="mosh uberspace -p 40201"
+alias sync-progress="watch -d grep -e Dirty: -e Writeback: /proc/meminfo"
 
 alias vnc-temp='x11vnc -display :0 -nap -wait 50 -noxdamage -forever -rfbauth ~/.vnc/passwd -speeds 50,1,1'
 
