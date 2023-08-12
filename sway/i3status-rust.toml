@@ -46,7 +46,6 @@ format_alt = " $icon $min min, $max max, $average avg "
 
 [[block]]
 block = "cpu"
-interval = 1
 
 [[block]]
 block = "load"
@@ -80,7 +79,6 @@ short = " $icon $timestamp.datetime(f:%R) "
 block = "custom"
 command = "if pgrep -x \"syncthing\" > /dev/null; then echo '{\"icon\":\"\",\"state\":\"Info\", \"text\": \"\"}'; else echo '{\"icon\":\"\",\"state\":\"Warning\", \"text\": \"\"}'; fi"
 json = true
-interval = 3
 [[block.click]]
 button = "left"
 cmd = "xdg-open http://localhost:8384"
