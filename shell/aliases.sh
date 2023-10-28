@@ -98,6 +98,7 @@ alias aur-update='yay -Syua'
 # NIX:
 alias nix-list-results='ls -l /nix/var/nix/gcroots/auto/'
 alias nixpkgs-build='nix-build . -A'
+alias nixpkgs-review-fast-merge='nixpkgs-review post-result && nixpkgs-review approve && nixpkgs-review merge'
 
 # DOTFILES:
 alias dotfile-update-submodules='cd ~/.dotfiles/ && git submodule foreach git pull origin master'
