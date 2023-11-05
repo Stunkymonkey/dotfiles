@@ -1,6 +1,5 @@
 # outputs
 
-
 set $laptop eDP-1
 
 bindswitch --reload --locked lid:on output $laptop disable
@@ -9,14 +8,14 @@ bindswitch --reload --locked lid:off output $laptop enable
 output * {
 	position 1920,0
 }
+
 output DP-* {
-  resolution 1920x1080
+  resolution 1920x1080@60Hz
 }
 
 output DP-4 {
 	position 3840,0
 }
-
 output $laptop {
 	position 0,0
 }
