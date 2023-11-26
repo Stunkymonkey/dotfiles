@@ -42,7 +42,7 @@ exec blueman-applet
 exec telegram-desktop -startintray
 exec gammastep-indicator
 exec nextcloud --background
-exec com.gitlab.newsflash
+exec io.gitlab.news_flash.NewsFlash --headless
 # workaround for https://github.com/vector-im/element-web/issues/18801
 exec sleep 3 && element-desktop --hidden
 
@@ -79,7 +79,7 @@ for_window [app_id="org.gnome.NautilusPreviewer"] floating enable
 for_window [app_id="com.nextcloud.desktopclient.nextcloud"] floating enable
 
 # Stick windows to workspaces
-assign [app_id="com.gitlab.newsflash"] 8
+assign [app_id="io.gitlab.news_flash.NewsFlash"] 8
 assign [app_id="thunderbird"] 9
 assign [app_id="evolution"] 9
 assign [app_id="rhythmbox"] 10
@@ -95,7 +95,7 @@ bindsym Shift+$mod+Tab workspace prev
 bindsym $mod+m exec . ~/.profile.d/90-keychain.sh && keepassxc
 bindsym $mod+e exec . ~/.profile.d/90-keychain.sh && codium
 bindsym $mod+w exec firefox
-bindsym $mod+u exec com.gitlab.newsflash
+bindsym $mod+u exec io.gitlab.news_flash.NewsFlash
 
 # mako
 bindsym $mod+dead_circumflex exec makoctl dismiss
