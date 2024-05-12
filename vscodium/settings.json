@@ -10,10 +10,11 @@
     "window.menuBarVisibility": "toggle",
     "workbench.startupEditor": "none",
     "git.autofetch": true,
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "workbench.colorTheme": "Flate",
     "extensions.autoCheckUpdates": false,
     "extensions.autoUpdate": false,
     "explorer.confirmDragAndDrop": false,
     "editor.guides.bracketPairs": "active",
-    "window.commandCenter": true
+    "window.commandCenter": true,
+    "workbench.iconTheme": "material-icon-theme"
 }
