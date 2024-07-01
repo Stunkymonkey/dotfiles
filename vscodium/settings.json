@@ -16,5 +16,6 @@
     "explorer.confirmDragAndDrop": false,
     "editor.guides.bracketPairs": "active",
     "window.commandCenter": true,
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "git.openRepositoryInParentFolders": "always"
 }
