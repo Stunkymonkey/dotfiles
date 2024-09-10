@@ -17,5 +17,6 @@
     "editor.guides.bracketPairs": "active",
     "window.commandCenter": true,
     "workbench.iconTheme": "material-icon-theme",
-    "git.openRepositoryInParentFolders": "always"
+    "git.openRepositoryInParentFolders": "always",
+    "git.mergeEditor": true
 }
