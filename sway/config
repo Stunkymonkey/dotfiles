@@ -47,7 +47,7 @@ exec io.gitlab.news_flash.NewsFlash --headless
 exec sleep 3 && element-desktop --hidden
 
 # mute microfone
-exec amixer set Capture nocap
+exec pactl set-source-mute @DEFAULT_SOURCE@ 1
 
 # prevent locking when fullscreen
 for_window [app_id="firefox"] inhibit_idle fullscreen
