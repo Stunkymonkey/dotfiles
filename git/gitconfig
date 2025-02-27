@@ -9,7 +9,7 @@
 [merge]
 	defaultToUpstream = true
 	tool = vimdiff
-	conflictstyle = diff3
+	conflictstyle = zdiff3
 [core]
 	editor = vim
 	eol = native
@@ -27,6 +27,7 @@
 	unstage = reset HEAD --
 [rerere]
 	enabled = true
+	autoupdate = true
 [branch]
 	autoSetupMerge = always
 # Fetch also the merge requests data for common remotes
@@ -39,7 +40,10 @@
 	fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*
 [diff]
 	tool = vimdiff
-	colormoved = default
+	colorMoved = plain
+	algorithm = histogram
+	mnemonicPrefix = true
+	renames = true
 [difftool]
 	prompt = false
 [color.blame]
@@ -72,6 +76,7 @@
 	light = false
 [pull]
 	ff = only
+	rebase = true
 [url "ssh://git@github.com/"]
 	pushInsteadOf = https://github.com/
 [url "ssh://git@gitlab.com/"]
@@ -80,3 +85,13 @@
 	pushInsteadOf = https://bitbucket.org/
 [push]
 	autoSetupRemote = true
+	default = simple
+	followTags = true
+[tag]
+	sort = version:refname
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
