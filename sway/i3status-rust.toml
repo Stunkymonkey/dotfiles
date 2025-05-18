@@ -1,6 +1,6 @@
 scrolling = "natural"
 [icons]
-icons = "awesome5"
+icons = "awesome6"
 
 [theme.overrides]
 good_bg = "#0C0C0D"
