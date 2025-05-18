@@ -66,6 +66,7 @@
     ~/.config/wofi/style.css: wofi/style.css
     ~/.config/sway/config: sway/config
     ~/.config/sway/thinkman: sway/thinkman
+    ~/.config/sway/workman: sway/workman
     ~/.config/swaylock/config: sway/lock
     ~/.config/environment.d/sway.conf: sway/env-vars
     ~/.config/Code/User/settings.json: vscodium/settings.json

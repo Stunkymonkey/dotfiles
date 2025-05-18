@@ -5,20 +5,16 @@ set $laptop eDP-1
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
-output * {
-	position 1920,0
-}
-
-output DP-* {
-  resolution 1920x1080@60Hz
-}
-
-output DP-4 {
-	position 3840,0
-}
-
 output $laptop {
 	position 0,0
+}
+
+output "Dell Inc. DELL U2520D G8DL923" {
+	position 5120,0
+}
+
+output "Dell Inc. DELL U2520D GXBL923" {
+	posiiton 2560,0
 }
 
 input type:touchpad {
