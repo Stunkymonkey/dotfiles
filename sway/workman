@@ -14,7 +14,7 @@ output "Dell Inc. DELL U2520D G8DL923" {
 }
 
 output "Dell Inc. DELL U2520D GXBL923" {
-	posiiton 2560,0
+	position 2560,0
 }
 
 input type:touchpad {
