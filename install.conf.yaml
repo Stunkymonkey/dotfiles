@@ -76,6 +76,7 @@
 - link:
     ~/.local/bin/host-is-on: bin/host-is-on.sh
     ~/.local/bin/git-authors: bin/git-authors.sh
+    ~/.local/bin/git-ard: bin/git-ard.sh
     ~/.local/bin/clean: bin/clean.sh
 
 # systemd
@@ -88,4 +89,3 @@
 
 - link:
     ~/.local/bin/diff-so-fancy: git/diff-so-fancy/diff-so-fancy
-

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Git automatic range diff
+
+# Enforce being in a git repository
+git rev-parse --is-inside-work-tree >/dev/null || exit $?
+
+# We actually should check out the head branch via `git remote show ${REMOTE}`,
+# but this requires active connection and active 2FA verification. Tedious to
+# have multiple calls for this
+if git rev-parse --verify main &>/dev/null; then
+    MAIN_BRANCH=main
+else
+    MAIN_BRANCH=master
+fi
+
+CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+GIT_REMOTE=origin
+
+# Show the next command
+set -x
+
+git range-diff "${GIT_REMOTE}/${MAIN_BRANCH}..${GIT_REMOTE}/${CURRENT_BRANCH}" "${MAIN_BRANCH}..${CURRENT_BRANCH}"
