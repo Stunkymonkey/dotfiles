@@ -77,6 +77,7 @@
     ~/.local/bin/host-is-on: bin/host-is-on.sh
     ~/.local/bin/git-authors: bin/git-authors.sh
     ~/.local/bin/git-ard: bin/git-ard.sh
+    ~/.local/bin/git-rewrite-commits: bin/git-rewrite-commits.sh
     ~/.local/bin/clean: bin/clean.sh
 
 # systemd
