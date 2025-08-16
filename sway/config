@@ -12,8 +12,8 @@ set $term "foot"
 
 # keyboard layout
 input * {
-	xkb_layout "gb,de"
-	xkb_options "caps:escape,grp:win_space_toggle,compose:ralt"
+	xkb_layout "gb_umlauts,de"
+	xkb_options "caps:escape,grp:win_space_toggle"
 	xkb_numlock enabled
 }
 # hide cursor after 10 sec

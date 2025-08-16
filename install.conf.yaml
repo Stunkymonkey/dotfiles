@@ -22,6 +22,7 @@
     - ~/.config/VSCodium/User
     - ~/.vim/pack/dotfiles
     - ~/.vim/colors
+    - ~/.xkb/symbols
 
 # casual
 - link:
@@ -69,6 +70,7 @@
     ~/.config/sway/workman: sway/workman
     ~/.config/swaylock/config: sway/lock
     ~/.config/environment.d/sway.conf: sway/env-vars
+    ~/.xkb/symbols/gb_umlauts: sway/xkb_gb_umlauts
     ~/.config/Code/User/settings.json: vscodium/settings.json
     ~/.config/VSCodium/User/settings.json: vscodium/settings.json
 

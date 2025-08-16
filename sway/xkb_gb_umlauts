@@ -1,0 +1,15 @@
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+  // define a base layout to inherit
+  include "gb"
+
+  // AltGr + a → ä / Ä
+  key <AC01> { [ a, A, adiaeresis, Adiaeresis ] };
+  // AltGr + o → ö / Ö
+  key <AD09> { [ o, O, odiaeresis, Odiaeresis ] };
+  // AltGr + u → ü / Ü
+  key <AD07> { [ u, U, udiaeresis, Udiaeresis ] };
+
+  // AltGr + e → €
+  key <AD03> { [ e, E, EuroSign, EuroSign ] };
+};
