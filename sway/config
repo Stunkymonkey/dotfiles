@@ -16,6 +16,8 @@ input * {
 	xkb_options "caps:escape,grp:win_space_toggle"
 	xkb_numlock enabled
 }
+# fix cursor on hidpi screens
+seat * xcursor_theme Adwaita
 # hide cursor after 10 sec
 seat * hide_cursor 10000
 
