@@ -49,6 +49,7 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.toprc: top/toprc
     ~/.config/htop/htoprc: top/htoprc
+    ~/.config/topgrade.toml: topgrade/topgrade.toml
     ~/.vimrc: vim/vimrc
     ~/.vim/pack/dotfiles/start: vim/start
     ~/.vim/colors/badwolf.vim: vim/start/badwolf/colors/badwolf.vim

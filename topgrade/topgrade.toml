@@ -1,0 +1,12 @@
+[misc]
+disable = ["system", "vim"]
+skip_notify = true
+
+[linux]
+nix_arguments = "--flake"
+
+[git]
+repos = [
+    "~/.dotfiles/",
+    "~/code/**/"
+]
