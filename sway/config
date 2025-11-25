@@ -38,7 +38,7 @@ exec swayidle -w \
 	resume 'swaymsg "output * dpms on"' \
 	before-sleep '~/.dotfiles/sway/lock.sh'
 exec mako
-exec syncthing -no-browser
+exec syncthing serve --no-browser
 exec blueman-applet
 exec telegram-desktop -startintray
 exec gammastep-indicator
