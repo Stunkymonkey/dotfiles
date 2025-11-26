@@ -1,4 +1,4 @@
-scrolling = "natural"
+invert_scrolling = true
 [icons]
 icons = "awesome6"
 
@@ -9,7 +9,7 @@ idle_bg = "#0C0C0D"
 warning_bg = "#0C0C0D"
 critical_bg = "#0C0C0D"
 separator_bg = "#0C0C0D"
-separator = " "
+separator = ""
 
 [[block]]
 block = "disk_space"
@@ -52,8 +52,7 @@ block = "load"
 
 [[block]]
 block = "battery"
-full_threshold = 99  # so the format is used when discharging
-format = " $icon $percentage {$time |}"
+format = " $icon $percentage {$time_remaining.dur(hms:true, min_unit:m) |}"
 
 [[block]]
 block = "bluetooth"
