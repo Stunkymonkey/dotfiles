@@ -40,7 +40,7 @@ exec swayidle -w \
 exec mako
 exec syncthing serve --no-browser
 exec blueman-applet
-exec telegram-desktop -startintray
+exec Telegram -startintray
 exec gammastep-indicator
 exec nextcloud --background
 exec io.gitlab.news_flash.NewsFlash --headless
