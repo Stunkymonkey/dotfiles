@@ -25,6 +25,13 @@
 	git = !exec git
 	s = status
 	unstage = reset HEAD --
+	c = commit
+	cam = commit --amend
+	cp = cherry-pick
+	r = rebase
+	ri = rebase --interactive
+	rc = rebase --continue
+	ra = rebase --abort
 [rerere]
 	enabled = true
 	autoupdate = true
