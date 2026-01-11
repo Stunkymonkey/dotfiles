@@ -56,6 +56,10 @@
     ~/.wgetrc: wget/wgetrc
     ~/.config/yay/config.json: yay/config.json
     ~/.Xresources: i3/Xresources
+    ~/.zshrc: zsh/zshrc
+    ~/.oh-my-zsh: zsh/oh-my-zsh
+    ~/.zsh-syntax-highlighting: zsh/zsh-syntax-highlighting
+    ~/.zsh-autosuggestions: zsh/zsh-autosuggestions
 
 # graphic
 - link:

@@ -1,0 +1,39 @@
+# Path to your oh-my-zsh installation.
+export ZSH=~/.oh-my-zsh
+fpath=( ~/.zcomplete "${fpath[@]}" )
+
+ZSH_THEME=""
+
+CASE_SENSITIVE="true"
+DISABLE_AUTO_UPDATE="true"
+DISABLE_LS_COLORS="false"
+DISABLE_AUTO_TITLE="true"
+ENABLE_CORRECTION="false"
+COMPLETION_WAITING_DOTS="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+HIST_STAMPS="yyyy-mm-dd"
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+plugins=(
+	colored-man-pages
+	common-aliases
+	sudo
+)
+source $ZSH/oh-my-zsh.sh
+
+alias reload=". ~/.zshrc"
+
+ZSH_AUTOSUGGEST_STRATEGY=(history)
+source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+#       Ctrl+Space
+bindkey '^ ' autosuggest-accept
+
+source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source ~/.profile.d/load
+
+if type kubectl &>/dev/null; then
+	source <(kubectl completion zsh)
+fi
+
+RPROMPT='[%*]'
