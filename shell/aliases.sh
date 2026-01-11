@@ -97,7 +97,21 @@ alias aur-update='yay -Syua'
 
 # NIX:
 alias nix-list-results='ls -l /nix/var/nix/gcroots/auto/'
-alias nixpkgs-build='nix-build . -A'
+nixpkgs-build() {
+    if [[ $# -lt 1 ]]; then
+        echo "Usage: nixpkgs-build <package> [parameters...]"
+        return 1
+    fi
+
+    local pkg="$1"
+    shift
+
+    if command -v nom >/dev/null 2>&1; then
+        nom build ".#$pkg" "$@"
+    else
+        nix build ".#$pkg" "$@"
+    fi
+}
 alias nixpkgs-review-fast-merge='nixpkgs-review post-result && nixpkgs-review approve && nixpkgs-review merge'
 
 # DOTFILES:
