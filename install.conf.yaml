@@ -7,6 +7,7 @@
 - create:
     - ~/.profile.d
     - ~/.local/bin
+    - ~/.local/share
     - ~/.config/alacritty
     - ~/.config/environment.d
     - ~/.config/foot
@@ -53,6 +54,7 @@
     ~/.vimrc: vim/vimrc
     ~/.vim/pack/dotfiles/start: vim/start
     ~/.vim/colors/badwolf.vim: vim/start/badwolf/colors/badwolf.vim
+    ~/.config/nvim: nvim
     ~/.wgetrc: wget/wgetrc
     ~/.config/yay/config.json: yay/config.json
     ~/.Xresources: i3/Xresources
