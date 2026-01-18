@@ -12,8 +12,14 @@ alias :qa="exit"
 alias :q!="exit"
 alias :qw="exit"
 
-alias vim="vim -p"
-alias vi="vim -p"
+if [ -n "$(type nvim 2>/dev/null)" ]; then
+  alias vimdiff='nvim -d'
+  alias vim="nvim -p"
+  alias vi="nvim -p"
+else
+  alias vim="vim -p"
+  alias vi="vim -p"
+fi
 
 alias yt-dlp='yt-dlp -o "%(title)s.%(ext)s"'
 alias yt-audio='yt-dlp -o "%(title)s.%(ext)s" --extract-audio'
