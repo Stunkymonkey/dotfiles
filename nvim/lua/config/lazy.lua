@@ -18,9 +18,10 @@ require("lazy").setup({
     -- import your plugins
     { import = "plugins" },
   },
-  -- automatically check for plugin updates
+  -- Check for plugin updates once a week
   checker = {
     enabled = true,
+    frequency = 3600 * 24 * 7,
     notify = false,
   },
   -- disable luarocks
