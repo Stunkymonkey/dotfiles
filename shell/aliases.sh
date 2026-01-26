@@ -48,13 +48,6 @@ if [ -n "$(type sudo 2>/dev/null)" ] && [ "$USER" != 'root' ]; then
 	done
 	unset sudo
 
-	#create sudo aliases WITH leading s
-	for sudo in ps vim chown chmod;
-	do
-		type $sudo > /dev/null 2>&1  && alias s$sudo="sudo $sudo";
-	done
-	unset sudo
-
 	type pacman >/dev/null 2>&1 && pacman(){
 		local sudo_needed
 		# Check if pacman has -S, -R or -U option
