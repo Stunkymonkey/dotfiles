@@ -6,8 +6,10 @@ These are my personal dotfiles. Free for personal use. Thanks to [@bebehei](http
 
 * sway (wayland: window manager)
 * i3 (xorg: window manager) (maybe outdated)
+* neovim (nvim)
+    * replaces `vim` completely
 * vim
-    * forked off [vimrc](https://github.com/bebehei/vimrc/)
+    * used as fallback, in case neovim is not available
     * NerdTree, autocompletion
     * colored
     * [git diff integration](https://github.com/mhinz/vim-signify)
