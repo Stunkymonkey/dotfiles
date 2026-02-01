@@ -18,5 +18,6 @@
     "window.commandCenter": true,
     "workbench.iconTheme": "material-icon-theme",
     "git.openRepositoryInParentFolders": "always",
-    "git.mergeEditor": true
+    "git.mergeEditor": true,
+    "chat.disableAIFeatures": false
 }
