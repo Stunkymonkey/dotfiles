@@ -36,32 +36,14 @@ alias fu='sudo "$BASH" -c "$(history -p !!)"'
 # open any file wihtout the knowledge of what type it is
 alias of="xdg-open"
 
-# only list the IO of <processname> with iotop
-# io <processname>
-io(){
-	local sudo_needed
-	[ -n "$(type sudo 2>/dev/null)" ] && [ "$USER" != 'root' ] \
-		&& sudo_needed="sudo"
-
-	${sudo_needed} iotop -p"$(pidof "$1" | sed 's/ / -p/g')"
-}
-
+# sudo aliases
 if [ -n "$(type sudo 2>/dev/null)" ] && [ "$USER" != 'root' ]; then
 	#create sudo aliases WITHOUT leading s
 	for sudo in fwupdmgr mount umount iftop iotop fsadm lvchange lvconvert lvcreate lvdisplay lvextend lvm lvmchange lvmconf lvmconfig lvmdiskscan lvmdump lvmetad lvmsadc lvmsar lvreduce lvremove lvrename lvresize lvs lvscan pvchange pvck pvcreate pvdisplay pvmove pvremove pvresize pvs pvscan vgcfgbackup vgcfgrestore vgchange vgck vgconvert vgcreate vgdisplay vgexport vgextend vgimport vgimportclone vgmerge vgmknodes vgreduce vgremove vgrename vgs vgscan vgsplit;
 	do
-		type $sudo > /dev/null 2>&1 && alias $sudo="sudo $sudo";
+		type "${sudo}" > /dev/null 2>&1 && alias "${sudo}"="sudo ${sudo}";
 	done
 	unset sudo
-
-	type pacman >/dev/null 2>&1 && pacman(){
-		local sudo_needed
-		# Check if pacman has -S, -R or -U option
-		# which should indicate in most times if we need sudo
-		echo "$*" | grep -- "-[SRU]" >/dev/null 2>&1 \
-			&& sudo_needed="sudo"
-		${sudo_needed} /usr/bin/pacman "$@"
-	}
 fi
 
 alias pwedit="sudo vim -p /etc/{passwd,group,shadow,gshadow}"
