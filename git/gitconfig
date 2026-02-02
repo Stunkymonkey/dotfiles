@@ -101,3 +101,7 @@
 	pruneTags = true
 [help]
 	autocorrect = prompt
+[init]
+	defaultBranch = main
+[advice]
+	skippedCherryPicks = false
