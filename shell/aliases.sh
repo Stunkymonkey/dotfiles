@@ -95,14 +95,13 @@ alias pacman-update='sudo pacman -Syu'
 alias aur-update='yay -Syua'
 
 # NIX:
-alias nix-list-results='ls -l /nix/var/nix/gcroots/auto/'
 nixpkgs-build() {
-    if [[ $# -lt 1 ]]; then
+    if [ "$#" -lt 1 ]; then
         echo "Usage: nixpkgs-build <package> [parameters...]"
         return 1
     fi
 
-    local pkg="$1"
+    pkg=$1
     shift
 
     if command -v nom >/dev/null 2>&1; then
@@ -129,8 +128,8 @@ alias ttime_black="sh -c \"sleep 300 && notify-send -u critical 'The tea is read
 for INTERFACE in /sys/class/net/*; do
 	[ -e "$INTERFACE" ] || break # incase it is empty
 	INTERFACE=$(basename "$INTERFACE")
-	alias ping-all-$INTERFACE="ping -6 ff02::1%$INTERFACE"
-	alias ping-routes-$INTERFACE="ping -6 ff02::2%$INTERFACE"
+	alias "ping-all-$INTERFACE"="ping -6 ff02::1%$INTERFACE"
+	alias "ping-routes-$INTERFACE"="ping -6 ff02::2%$INTERFACE"
 done
 
 alias sort-by-size="du -hsc * | sort -hk1"

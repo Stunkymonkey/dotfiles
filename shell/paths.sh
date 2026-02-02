@@ -1,21 +1,15 @@
 #!/bin/sh
 
-# Append our default paths
-appendpath () {
-    case ":$PATH:" in
-        *:"$1":*)
-            ;;
-        *)
-            if [ -d "$1" ]; then
-                export PATH="${PATH:+$PATH:}$1"
-            fi
-    esac
+set_path(){
+	if [ -d "${1}" ]; then
+		export PATH="${1}:${PATH}"
+	fi
 }
 
-appendpath ~/.local/bin
-appendpath ~/.bin
+set_path ~/.local/bin
+set_path ~/.bin
 
-export GOPATH=$HOME/.go
-export GOBIN=$HOME/.gobin
-appendpath "$GOPATH"/bin
-appendpath "$GOBIN"
+export GOPATH="${HOME}/.go"
+export GOBIN="${HOME}/.gobin"
+set_path "${GOPATH}/bin"
+set_path "${GOBIN}"
