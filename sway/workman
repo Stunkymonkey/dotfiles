@@ -10,11 +10,11 @@ output $laptop {
 }
 
 output "Dell Inc. DELL U2520D G8DL923" {
-	position 5120,0
+	position 4000,-480
 }
 
 output "Dell Inc. DELL U2520D GXBL923" {
-	position 2560,0
+	position 1440,-480
 }
 
 input type:touchpad {
