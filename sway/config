@@ -50,6 +50,10 @@ exec sleep 3 && element-desktop --hidden
 # mute microfone
 exec wpctl set-mute @DEFAULT_SOURCE@ 1
 
+# clipboard-history
+exec wl-paste --watch cliphist store
+bindsym $mod+p exec cliphist list | wofi -S dmenu | cliphist decode | wl-copy
+
 # prevent locking when fullscreen
 for_window [app_id="firefox"] inhibit_idle fullscreen
 for_window [class="Chromium-browser"] inhibit_idle fullscreen
