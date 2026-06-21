@@ -8,6 +8,7 @@
     - ~/.profile.d
     - ~/.local/bin
     - ~/.local/share
+    - ~/.config/aerospace
     - ~/.config/alacritty
     - ~/.config/environment.d
     - ~/.config/foot
@@ -62,6 +63,7 @@
 
 # graphic
 - link:
+    ~/.config/aerospace/aerospace.toml: aerospace/aerospace.toml
     ~/.config/i3status-rust/config.toml: sway/i3status-rust.toml
     ~/.local/bin/lock: sway/lock.sh
     ~/.config/mako/config: mako/config
