@@ -107,12 +107,14 @@ alias ttime_green="sh -c \"sleep 180 && notify-send -u critical 'The tea is read
 alias ttime_black="sh -c \"sleep 300 && notify-send -u critical 'The tea is ready'\" &"
 
 # IPv6 ping
-for INTERFACE in /sys/class/net/*; do
-	[ -e "$INTERFACE" ] || break # incase it is empty
-	INTERFACE=$(basename "$INTERFACE")
-	alias "ping-all-$INTERFACE"="ping -6 ff02::1%$INTERFACE"
-	alias "ping-routes-$INTERFACE"="ping -6 ff02::2%$INTERFACE"
-done
+if [ -d /sys/class/net ]; then
+    for INTERFACE in /sys/class/net/*; do
+        [ -e "$INTERFACE" ] || break # incase it is empty
+        INTERFACE=$(basename "$INTERFACE")
+        alias "ping-all-$INTERFACE"="ping -6 ff02::1%$INTERFACE"
+        alias "ping-routes-$INTERFACE"="ping -6 ff02::2%$INTERFACE"
+    done
+fi
 
 alias sort-by-size="du -hsc * | sort -hk1"
 #END alias-definitions
