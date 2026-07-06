@@ -17,6 +17,10 @@ output "Dell Inc. DELL U2520D GXBL923" {
 	position 1440,-480
 }
 
+output "Dell Inc. DELL U3421WE 21BB753" {
+	position 1440,-480
+}
+
 input type:touchpad {
 	dwt enabled
 	tap enabled
