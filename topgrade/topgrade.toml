@@ -1,5 +1,5 @@
 [misc]
-disable = ["system", "vim"]
+disable = ["system", "claude_code", "vim"]
 skip_notify = true
 
 [linux]
