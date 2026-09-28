@@ -95,7 +95,7 @@ nixpkgs-build() {
 alias nixpkgs-review-fast-merge='nixpkgs-review post-result && nixpkgs-review approve && nixpkgs-review merge'
 
 # DOTFILES:
-alias dotfile-update-submodules='cd ~/.dotfiles/ && git submodule foreach git pull origin master'
+alias dotfile-update-submodules='cd ~/.dotfiles/ && git submodule foreach git pull origin HEAD'
 
 # ESP32:
 alias esp32-flash="esptool --chip esp32 -p /dev/ttyUSB? write_flash -z 0x1000"
