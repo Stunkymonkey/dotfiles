@@ -8,6 +8,7 @@
     - ~/.profile.d
     - ~/.local/bin
     - ~/.local/share
+    - ~/.claude
     - ~/.config/aerospace
     - ~/.config/alacritty
     - ~/.config/environment.d
@@ -31,6 +32,7 @@
     ~/.dotfiles: ''
     ~/.bashrc: bash/bashrc
     ~/.bash_profile: bash/bashrc
+    ~/.claude/CLAUDE.md: llm/claude/CLAUDE.md
     ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
     ~/.liquidprompt: bash/liquidprompt
     ~/.config/foot/foot.ini: foot/foot.ini
